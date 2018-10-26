@@ -2,13 +2,42 @@ $colorBlack: #000000;
 $colorWhite: #FFFFFF;
 $colorPrimary: #E9454F;
 $colorGray400: #C4C4C4;
+$colorGray500: #E5E5E5;
 $colorGray600: #F6F6F6;
 
-@import "~normalize.css/normalize.css";
-@import "import/*.scss";
+$font1: PFDinDisplay, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font2: PFDinMedium, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+@mixin dev($name: '', $height: 30, $color: #df1c41) {
+  border: 1px solid $color;
+  min-height: unquote($height + 'px');
+  position: relative;
+  &::after {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    content: $name;
+    color: #777;
+    font-size: 12px;
+  }
+}
 
 @mixin media-320() { @media all and (max-width: 320px) { @content; } }
 @mixin media-768() { @media all and (max-width: 768px) { @content; } }
 @mixin media-960() { @media all and (max-width: 960px) { @content; } }
 @mixin media-1200() { @media all and (max-width: 1200px) { @content; } }
 @mixin media-1440() { @media all and (max-width: 1440px) { @content; } }
+
+
+@font-face {
+  font-family: 'PFDinDisplay';
+  src: url(../fonts/PFDinDisplay/PFDinDisplay.ttf);
+}
+
+@font-face {
+  font-family: 'PFDinMedium';
+  src: url(../fonts/PFDinMedium/PFDinMedium.ttf);
+}
+
+@import "~normalize.css/normalize.css";
+@import "import/*.scss";
