@@ -12,7 +12,9 @@
     "beautify": "html dist/*.html --indent-size 2",
     "clear": "del-cli dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-rc.2",
     "@babel/plugin-proposal-class-properties": "^7.0.0-rc.2",
@@ -26,6 +28,7 @@
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
+    "node-sass-glob-importer": "^5.2.0",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",

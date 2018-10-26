@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const globImporter = require('node-sass-glob-importer');
 const fs = require('fs')
 
 function generateHtmlPlugins(templateDir) {
@@ -23,7 +24,7 @@ const htmlPlugins = generateHtmlPlugins('./src/html/views');
 module.exports = {
   entry: [
     './src/js/index.js',
-    './src/scss/style.scss'
+    './src/scss/base.scss'
   ],
   output: {
     filename: './js/bundle.js'
@@ -48,7 +49,8 @@ module.exports = {
       {
         test: /\.(sass|scss)$/,
         include: path.resolve(__dirname, 'src/scss'),
-        use: [{
+        use: [
+          {
             loader: MiniCssExtractPlugin.loader,
             options: {}
           },
@@ -60,28 +62,17 @@ module.exports = {
             }
           },
           {
-            loader: 'postcss-loader',
+            loader: 'sass-loader',
             options: {
-              ident: 'postcss',
               sourceMap: true,
-              plugins: () => [
-                require('cssnano')({
-                  preset: ['default', {
-                    discardComments: {
-                      removeAll: true,
-                    },
-                  }]
-                })
-              ]
-            }
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true
+              importer: globImporter()
             }
           }
-        ]
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       },
       {
         test: /\.html$/,
