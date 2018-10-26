@@ -1,6 +1,26 @@
 .footer {
   border: 1px solid green;
+
+  &__bottom {
+    background: $colorGray400;
+    height: 88px;
+    padding-top:32px;
+
+  }
+  &__bottom-text {
+    width: 816px;
+    height: 39px;
+    font-size: 16px;
+    font-family: Din Display Pro C;
+    line-height: 19px;
+  }
+  &__bottom-copyright {
+    width: 358px;
+    height: 37px;
+    font-size: 16px;
+    font-family: Din Display Pro C;
+    line-height: 19px;
+
+
+  }
 }
- &__bottom {
-   background: $colorGray400;
- }
