@@ -1,11 +1,11 @@
-@import "~normalize.css/normalize.css";
-@import "import/*.scss";
-
 $colorBlack: #000000;
 $colorWhite: #FFFFFF;
 $colorPrimary: #E9454F;
 $colorGray400: #C4C4C4;
 $colorGray600: #F6F6F6;
+
+@import "~normalize.css/normalize.css";
+@import "import/*.scss";
 
 @mixin media-320() { @media all and (max-width: 320px) { @content; } }
 @mixin media-768() { @media all and (max-width: 768px) { @content; } }
