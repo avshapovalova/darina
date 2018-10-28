@@ -11,14 +11,29 @@ html, body {
   font-family: $font1;
 }
 
+.ui { padding: 20px }
+
 .page {}
 
 .container {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-}
-
-.link {
-  color: $colorBlack;
+  padding: 0 20px;
+  @include media-1440 {
+    max-width: 1280px;
+  }
+  @include media-1200 {
+    max-width: 1031px;
+  }
+  @include media-960 {
+    padding: 0 10px;
+    max-width: 780px;
+  }
+  @include media-768 {
+    max-width: 630px;
+  }
+  @include media-320 {
+    max-width: 256px;
+  }
 }

@@ -1,0 +1,8 @@
+.link {
+  color: $colorBlack;
+  text-decoration: none;
+
+  &.m-line {
+    text-decoration: underline;
+  }
+}

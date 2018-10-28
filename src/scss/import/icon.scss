@@ -1,0 +1,16 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $colorPrimary;
+  border-radius: 50%;
+  @include media-960 {
+    width: 25px;
+    height: 25px;
+    & svg {
+      width: 70%;
+    }
+  }
+}

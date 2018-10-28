@@ -2,16 +2,32 @@
 
   &__top {
     background: $colorGray500;
-    padding-top: 40px;
+    padding: 40px 0 0 0;
+    @include media-960 {
+      padding-bottom: 40px;
+    }
   }
   &__block1 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    @include media-960 {
+      display: block;
+    }
   }
   &__list {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    @include media-320 {
+      display: block;
+    }
+  }
+  &__ul1 {
+    @include media-320 {
+      & + & {
+        margin-top: 50px;
+      }
+    }
   }
   &__li {
     font-size: 12px;
@@ -20,21 +36,121 @@
     & + & {
       margin-top: 20px;
     }
+    @include media-1200 {
+      font-size: 11px;
+      max-width: 174px;
+    }
+    @include media-320 {
+      font-size: 12px;
+    }
   }
   &__right {
-    @include dev('блок с иконками');
-    width: 180px;
+    width: 160px;
     margin-left: 50px;
     min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include media-960 {
+      width: auto;
+      min-height: unset;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    @include media-320 {
+      display: block;
+      margin-top: 50px;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  &__right-top {
+    width: 100%;
+  }
+  &__right-bottom {
+    width: 100%;
+    @include media-960 {
+      margin-left: 40px;
+    }
+  }
+  &__phone {
+    display: block;
+    font-size: 18px;
+    color: $colorPrimary;
+    text-align: right;
+    text-decoration: none;
+    @include media-960 {
+      text-align: right;
+    }
+    @include media-320 {
+      text-align: center;
+    }
+  }
+  &__phone-info {
+    margin: 3px 0 15px 0;
+    text-align: right;
+    color: $colorPrimary;
+    font-size: 12px;
+    @include media-960 {
+      margin-bottom: 0;
+    }
+    @include media-320 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  &__social {
+    &.m-mobile {
+      display: none;
+    }
+    @include media-960 {
+      &.footer__social {
+        display: none;
+      }
+      &.footer__social.m-mobile {
+        display: flex;
+        margin-right: 30px;
+      }
+    }
+    @include media-640 {
+      &.footer__social.m-mobile {
+        display: flex;
+        margin: 0 auto 20px auto;
+      }
+    }
+  }
+  &__button {
+    margin-top: 15px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    @include media-1200 {
+      font-size: 17px;
+    }
+    @include media-960 {
+      margin-top: 0;
+      font-size: 14px;
+      width: 136px;
+    }
+  }
+  &__button + &__button {
+    margin-top: 8px;
   }
   &__divider {
     margin: 25px 0;
     width: 100%;
     height: 2px;
     background: $colorBlack;
+    @include media-960 {
+      display: none;
+    }
   }
   &__block2 {
     padding: 15px 0 40px 0;
+    @include media-960 {
+      display: none;
+    }
   }
   &__contacts-title {
     font-size: 18px;
@@ -48,9 +164,22 @@
   &__contact {
     font-size: 16px;
     line-height: normal;
+    @include media-1200 {
+      font-size: 14px;
+    }
   }
   &__bottom {
     background: $colorGray400;
+    @include media-960 {
+      & .container {
+        max-width: unset;
+        width: 100%;
+        padding: 0 40px;
+      }
+    }
+    @include media-640 {
+      padding: 20px 0 40px 0;
+    }
   }
   &__block3 {
     display: flex;
@@ -58,17 +187,53 @@
     align-items: center;
     height: 88px;
     padding-top: 25px;
+    @include media-960 {
+      &.container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+      }
+    }
+    @include media-640 {
+      display: block;
+    }
   }
   &__text1 {
     flex: 1;
     font-size: 16px;
     line-height: 19px;
     height: 40px;
+    @include media-960 {
+      height: auto;
+    }
+    @include media-640 {
+      max-width: unset;
+      font-size: 12px;
+    }
+  }
+  &__br {
+    @include media-1200 {
+      display: none
+    }
   }
   &__text2 {
     font-size: 16px;
     line-height: 19px;
     height: 40px;
+    @include media-960 {
+      max-width: 183px;
+      margin-left: 40px;
+      height: auto;
+    }
+    @include media-960 {
+      max-width: 112px;
+    }
+    @include media-640 {
+      margin-left: 0;
+      margin-top: 20px;
+      max-width: unset;
+      font-size: 12px;
+    }
   }
   &__link {
     text-decoration: none;

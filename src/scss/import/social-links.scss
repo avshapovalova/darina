@@ -1,0 +1,9 @@
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105px;
+  @include media-960 {
+    width: 87px;
+  }
+}

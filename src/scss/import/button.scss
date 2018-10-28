@@ -1,0 +1,19 @@
+.button {
+  padding: 4px 20px 0 20px;
+  min-height: 39px;
+  font-size: 19px;
+  background: transparent;
+  border: 2px solid $colorBlack;
+  border-radius: 10px;
+  line-height: 1;
+  color: $colorBlack;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  &.m-red {
+    border-color: $colorPrimary;
+    color: $colorPrimary;
+  }
+}
