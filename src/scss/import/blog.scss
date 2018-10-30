@@ -1,6 +1,10 @@
 .blog {
   display: flex;
   justify-content: space-between;
+  padding: 40px 0px;
+  @include media-320 {
+    display: block;
+  }
 
   &__categories {
     width: 300px;
@@ -16,11 +20,16 @@
 
   &__list {
     width: calc(100% - 300px - 70px);
+
   }
   &__item {
     display: flex;
     width: 100%;
     height: 308px;
+    @include media-960 {
+      display: block;
+      height: auto;
+    }
 
   }
   &__item-content {
@@ -32,16 +41,18 @@
   }
   &__item:nth-child(even) &__item-content {
     padding-left: 30px;
+    @include media-960 {
+      padding-left: 0px;
+    }
   }
   &__item-title {
     font-size: 24px;
     text-transform: uppercase;
-    margin-bottom: 40px;
     max-width: 400px;
   }
   &__item-text {
-    margin-bottom: 30px;
     max-width: 400px;
+    padding: 20px 0px;
 
 
   }
@@ -49,6 +60,9 @@
     width: 50%;
     height: 308px;
     background: $colorGray400;
+    @include media-960 {
+      width: auto;
+    }
 
   }
 
