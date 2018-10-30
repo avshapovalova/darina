@@ -1,19 +1,34 @@
-.divider-title {
+.title-divider {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin-top:28px;
 
-
-  &__half {
-    height: 2px;
-    background: $colorBlack;
-    width: 40%;
-  }
-  &__name {
+  &__text {
+    flex: 0;
+    margin: 0 30px;
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
-    line-height: normal;
+    @include media-320 {
+      font-size: 18px;
+    }
+
+  }
+  &__line {
+    flex: 1; // заполняем свободное пространство
+    height: 2px;
+    background-color: black;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
