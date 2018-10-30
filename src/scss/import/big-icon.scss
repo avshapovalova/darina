@@ -8,5 +8,8 @@
   border-radius: 50%;
   @include media-320 {
     margin: 0 auto;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
   }
 }

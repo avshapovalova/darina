@@ -33,6 +33,9 @@ html, body {
   @include media-768 {
     max-width: 630px;
   }
+  @include media-640 {
+    max-width: 510px;
+  }
   @include media-320 {
     max-width: 256px;
   }
