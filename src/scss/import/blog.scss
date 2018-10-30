@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
 
-
+  &__categories {
+    width: 300px;
+  }
   &__li {
     font-size: 16px;
     text-transform: uppercase;
@@ -12,8 +14,7 @@
     }
   }
   &__list {
-    flex: 1;
-    margin-right: 70px;
+    width: calc(100% - 300px - 70px);
   }
   &__item {
     display: flex;
