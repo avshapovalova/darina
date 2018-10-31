@@ -1,0 +1,38 @@
+.text1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  @include media-960 {
+    display: block;
+  }
+
+  &__text {
+    flex: 1;
+    line-height: normal;
+    font-size: 16px;
+    padding-right: 40px;
+  }
+
+  &__images {
+    flex: 0;
+  }
+
+  &__image {
+    height: 382px;
+    min-width: 741px;
+    background: $colorGray400;
+    margin-bottom: 60px;
+    @include media-1440 {
+     min-width: 521px;
+    }
+    @include media-1200 {
+      min-width: 433px;
+    }
+    @include media-960 {
+      min-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+

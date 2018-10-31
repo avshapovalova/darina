@@ -1,0 +1,44 @@
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: $colorPrimary;
+  max-width: 657px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  max-width: 657px;
+  margin-top:0px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top:0px;
+}
+.h3.m-big {
+  font-size: 18px;
+  margin-top:0px;
+  text-transform: uppercase;
+  }
+
+
+p {
+  margin-bottom: 30px;
+  line-height: normal;
+  font-size: 16px;
+}
+.text{
+  line-height: normal;
+  font-size: 16px;
+  &__ul{
+    margin-bottom: 90px;
+    padding-inline-start:15px;
+  }
+  &__li{
+    margin-bottom: 20px;
+}
+
+}
