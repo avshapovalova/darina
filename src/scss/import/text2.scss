@@ -1,0 +1,56 @@
+.text2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__content {
+    flex: 1;
+    line-height: normal;
+    font-size: 16px;
+    margin-right: 100px;
+
+    @include media-320 {
+      margin-right: 0px;
+    }
+
+  }
+  &__image {
+
+    height: 382px;
+    min-width: 682px;
+    background: $colorGray400;
+    margin-top: 20px;
+    @include media-1440 {
+      min-width: 523px;
+    }
+    @include media-1200 {
+      min-width: 433px;
+    }
+    @include media-960 {
+      width: 500px;
+      height: 253px;
+      margin: 0 auto;
+    }
+    @include media-768 {
+      width: 438px;
+    }
+    @include media-320 {
+      width: 230px;
+      height: 240px;
+    }
+  }
+
+  &.m-red {
+    background: $colorPrimary;
+    color: $colorWhite;
+  }
+}
+
+.text-2 {
+  display: flex;
+  @include media-960 {
+    display: block;
+  }
+
+}
