@@ -1,0 +1,23 @@
+.navigation-icons {
+  padding-top:40px;
+  padding-bottom: 40px;
+  @include media-320 {
+    padding-bottom: 0px;
+  }
+
+  &__block1{
+    display: flex;
+    justify-content: space-between;
+    @include media-320 {
+      display:block;
+
+    }
+  }
+  &__button {
+    min-width: 190px;
+    @include media-960 {
+      min-width: 167px;
+    }
+  }
+}
+
