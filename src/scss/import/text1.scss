@@ -1,19 +1,9 @@
 .text1 {
-  display: flex;
-  justify-content: space-around;
+
   margin-top: 60px;
-  @include media-960 {
-    display: block;
-  }
-
-  &__text {
-    flex: 1;
-    line-height: normal;
-    font-size: 16px;
-    padding-right: 40px;
-  }
-
-
+  padding-right: 40px;
+  font-size: 16px;
+  line-height: normal;
 }
 
 

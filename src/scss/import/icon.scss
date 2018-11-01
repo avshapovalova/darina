@@ -17,4 +17,19 @@
   width: 21px;
   height: 21px;
 }
+  &.m-big{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $colorPrimary;
+    border-radius: 50%;
+    @include media-320 {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      width: 80px;
+      height: 80px;
+    }
+  }
 }
