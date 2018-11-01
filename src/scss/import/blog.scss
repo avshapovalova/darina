@@ -125,6 +125,11 @@
     @include media-960 {
       width: auto;
     }
+    @include media-768 {
+      margin-top:40px;
+      margin-bottom: 40px;
+
+    }
     @include media-320 {
       height: 240px;
     }
@@ -133,5 +138,8 @@
 
   &__button {
     margin: 30px auto;
+    @include media-768 {
+      margin: 0 auto;
+    }
   }
 }

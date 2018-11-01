@@ -1,0 +1,25 @@
+.reds {
+  border:1px solid $colorPrimary;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+
+
+
+
+ &__item {
+   width: 100%;
+   border-right: 1px solid $colorPrimary;
+   text-align: center;
+   padding-bottom: 20px;
+   padding-top: 20px;
+
+
+ }
+  &__item:last-child{
+    border-right: none;
+  }
+}
