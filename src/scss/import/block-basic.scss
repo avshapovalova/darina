@@ -1,0 +1,8 @@
+.block-basic {
+  padding-bottom: 28px;
+  &.m-red {
+    background-color: $colorPrimary;
+    color:$colorWhite;
+  }
+
+}

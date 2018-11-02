@@ -25,7 +25,7 @@
     align-items: center;
     background: $colorPrimary;
     border-radius: 50%;
-    @include media-320 {
+    @include media-640 {
       margin: 0 auto;
       margin-bottom: 30px;
       width: 80px;

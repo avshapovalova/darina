@@ -1,0 +1,7 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  @include media-960 {
+    flex-wrap:wrap;
+  }
+}
