@@ -5,26 +5,28 @@
   max-width: 783px;
   @include media-320 {
     display: block;
-    max-width: auto;
+    width: auto;
   }
 
   &__content {
     font-size: 16px;
     margin-left: 66px;
+    width: calc(100% - 180px);
     @include media-320 {
       margin-left: 0px;
-      font-size: 16px;
+      width:auto;
+
     }
   }
 
 
   &__text.m-big {
-    max-width: 920px;
+
     font-size: 24px;
     text-transform: uppercase;
     padding-bottom: 20px;
     @include media-320 {
-      max-width: auto;
+      width: auto;
     }
   }
 

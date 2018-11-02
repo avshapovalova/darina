@@ -1,0 +1,26 @@
+.link-act {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.link {
+  &__text {
+    color:$colorBlack;
+    text-decoration: none;
+    line-height: normal;
+    font-size: 16px;
+    padding-top: 5px;
+    &.m-white {
+      color: $colorWhite;
+    }
+    &.m-red {
+      color: $colorPrimary;
+    }
+    &.m-big {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+  }
+  }
+
