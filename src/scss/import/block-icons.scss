@@ -1,5 +1,7 @@
 .block-icons {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  &.m-wrap {
+    flex-wrap: wrap;
+  }
 }

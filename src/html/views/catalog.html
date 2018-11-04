@@ -1,0 +1,81 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<div class="catalog">
+    <div class="catalog__filter">
+        <div class="catalog__filter-mobile">Фильтры</div>
+        <div class="catalog__filter-content filter">
+            <div class="filter__title">Фильтры</div>
+            <a href="#" class="link filter__link">Очистить все</a>
+            <div class="filter__divider"></div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Тип/Вид/Категория</div>
+                <a href="#" class="link filter__item-option">Электрическая Плита</a>
+                <a href="#" class="link filter__item-option m-active">Газовая Плита</a>
+                <a href="#" class="link filter__item-option">Комбинированная</a>
+                <a href="#" class="link filter__item-option">Хиты</a>
+                <a href="#" class="link filter__item-option">Новинки</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Тип варочной поверхности</div>
+                <a href="#" class="link filter__item-option">Газовая</a>
+                <a href="#" class="link filter__item-option m-active">Индукционная</a>
+                <a href="#" class="link filter__item-option">Стеклокерамическая</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Цвет</div>
+                <a href="#" class="link filter__item-option">Белый</a>
+                <a href="#" class="link filter__item-option">Нержавеющая сталь</a>
+                <a href="#" class="link filter__item-option">Черный</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Электрический вертел</div>
+                <a href="#" class="link filter__item-option">Да</a>
+                <a href="#" class="link filter__item-option">Нет</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Вольт</div>
+                <a href="#" class="link filter__item-option">220-240</a>
+                <a href="#" class="link filter__item-option">230</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Энергосбережение</div>
+                <a href="#" class="link filter__item-option">А</a>
+                <a href="#" class="link filter__item-option">Другое</a>
+            </div>
+
+            <div class="filter__item">
+                <div class="filter__item-title">Подсветка духовки</div>
+                <a href="#" class="link filter__item-option">Да</a>
+                <a href="#" class="link filter__item-option">Нет</a>
+            </div>
+
+            <div class="filter__divider"></div>
+            <a href="#" class="link filter__link">Помощь</a>
+        </div>
+    </div>
+    <div class="catalog__listing">
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+        <%= _.template(require('./../includes/product-block.html'))({ className: 'catalog__item' }) %>
+    </div>
+</div>
+<%= _.template(require('./../includes/compare-block.html'))() %>
+<%= _.template(require('./../includes/footer.html'))() %>

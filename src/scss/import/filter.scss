@@ -1,0 +1,35 @@
+.filter {
+  &__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    margin: 20px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__divider {
+    height: 2px;
+    background: $colorBlack;
+    width: calc(100% + 7px);
+    transform: translateX(-7px);
+    right: 0;
+  }
+  &__item {}
+  &__item-title {
+    margin: 25px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $colorPrimary;
+  }
+  &__item-option {
+    display: block;
+    font-size: 16px;
+    margin: 20px 0 20px 30px;
+    &.m-active {
+      color: $colorPrimary;
+    }
+  }
+}

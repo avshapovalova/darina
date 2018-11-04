@@ -78,15 +78,12 @@
   }
   &__item-content {
     width: 50%;
-
-    & + & {
-      padding-top: 30px;
-    }
-
-
     @include media-960 {
       width: auto;
     }
+  }
+  &__item + &__item &__item-content {
+    padding-top: 30px;
   }
   &__item:nth-child(even){
     flex-direction: row-reverse;
