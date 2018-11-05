@@ -30,6 +30,7 @@
     @include media-640 {
       display: block;
     }
+
   }
   &__filter-content {
     width: 220px;
@@ -37,6 +38,7 @@
     @include media-640 {
       display: none;
       &.m-active {
+
         display: block;
       }
     }

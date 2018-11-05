@@ -1,57 +1,132 @@
 <%= _.template(require('./../includes/header.html'))() %>
-<div class="catalog">
+<div class="catalog" xmlns="http://www.w3.org/1999/html" >
     <div class="catalog__filter">
         <div class="catalog__filter-mobile">Фильтры</div>
-        <div class="catalog__filter-content filter">
+
+        <div class="catalog__filter-content filter m-active">
             <div class="filter__title">Фильтры</div>
             <a href="#" class="link filter__link">Очистить все</a>
             <div class="filter__divider"></div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Тип/Вид/Категория</div>
-                <a href="#" class="link filter__item-option">Электрическая Плита</a>
-                <a href="#" class="link filter__item-option m-active">Газовая Плита</a>
-                <a href="#" class="link filter__item-option">Комбинированная</a>
-                <a href="#" class="link filter__item-option">Хиты</a>
-                <a href="#" class="link filter__item-option">Новинки</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Электрическая Плита</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Газовая плита</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Комбинированная</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Хиты</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Новинки</a>
+                    </div>
+                </form>
             </div>
+
 
             <div class="filter__item">
                 <div class="filter__item-title">Тип варочной поверхности</div>
-                <a href="#" class="link filter__item-option">Газовая</a>
-                <a href="#" class="link filter__item-option m-active">Индукционная</a>
-                <a href="#" class="link filter__item-option">Стеклокерамическая</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Газовая</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option m-active">Индукционная</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Стеклокерамическая</a>
+                    </div>
+                </form>
             </div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Цвет</div>
-                <a href="#" class="link filter__item-option">Белый</a>
-                <a href="#" class="link filter__item-option">Нержавеющая сталь</a>
-                <a href="#" class="link filter__item-option">Черный</a>
+
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Белый</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Нержавеющая сталь</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Черный</a>
+                    </div>
+                </form>
             </div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Электрический вертел</div>
-                <a href="#" class="link filter__item-option">Да</a>
-                <a href="#" class="link filter__item-option">Нет</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Да</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Нет</a>
+                    </div>
+                </form>
+
             </div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Вольт</div>
-                <a href="#" class="link filter__item-option">220-240</a>
-                <a href="#" class="link filter__item-option">230</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Да</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Нет</a>
+                    </div>
+                </form>
             </div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Энергосбережение</div>
-                <a href="#" class="link filter__item-option">А</a>
-                <a href="#" class="link filter__item-option">Другое</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Да</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Другое</a>
+                    </div>
+                </form>
             </div>
 
             <div class="filter__item">
                 <div class="filter__item-title">Подсветка духовки</div>
-                <a href="#" class="link filter__item-option">Да</a>
-                <a href="#" class="link filter__item-option">Нет</a>
+                <form class="filter__item-form">
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Да</a>
+                    </div>
+                    <div class="filter__item-block1">
+                        <input class="filter__item-input" type="radio" class="link filter__item-option" value="Электрическая Плита">
+                        <a href="#" class="link filter__item-option">Нет</a>
+                    </div>
+                </form>
             </div>
 
             <div class="filter__divider"></div>

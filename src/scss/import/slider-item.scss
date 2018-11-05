@@ -4,18 +4,50 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  @include media-1200 {
+    font-size: 14px;
+    width: calc(50% - 40px);
+  }
+  @include media-960 {
+    width: 100%;
+    &.m-nomobile{
+      display: none;
+    }
+  }
+  @include media-640 {
+    margin: 0 auto;
+  }
 }
-
+.slider-item-button {
+  @include media-640 {
+    margin: 0 auto 20px auto;
+  }
+}
 .slider {
   &__block1 {
     display: flex;
     justify-content: space-between;
+    @include media-640 {
+      display: block;
+      width: auto;
+    }
 
   }
   &__text{
-    width: calc(100% - 40px);
+    width: 50%;
+    margin-right: 20px;
+    @include media-1440 {
+      width: 42%;
+    }
     @include media-1200 {
+      width: 38%;
+    }
+    @include media-960 {
       width: 50%;
+    }
+    @include media-640 {
+      width: auto;
+      margin-bottom: 20px;
     }
   }
   &__name {
@@ -27,19 +59,38 @@
     width: 30%;
     height: 2px;
     background: $colorBlack;
-    margin-bottom: 35px;
-    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-top: 25px;
     &.m-white{
       background: $colorWhite;
+    }
+    @include media-1200 {
+      margin-bottom: 20px;
+      margin-top: 20px;
     }
   }
 
   &__image{
     background: $colorGray400;
-    width:100%;
+    width:50%;
     height: 306px;
+    flex: 0 0 auto;
+    @include media-1440 {
+      width: 58%;
+    }
     @include media-1200 {
       height: 270px;
+      width: 62%;
+    }
+    @include media-960 {
+      width: calc(50% - 100px);
+    }
+    @include media-768 {
+      width: calc(50% - 35px);
+    }
+    @include media-640 {
+      height: 240px;
+      width: auto;
     }
   }
   &__icons {
@@ -62,6 +113,10 @@
   &__block3 {
     display: flex;
     justify-content: space-between;
+    @include media-640 {
+      display: block;
+      margin: 0 auto;
+    }
   }
   &__icon-name{
     flex:0;
