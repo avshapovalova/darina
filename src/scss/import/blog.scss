@@ -121,6 +121,7 @@
     background: $colorGray400;
     @include media-960 {
       width: auto;
+      margin-top:40px;
     }
     @include media-768 {
       margin-top:40px;
@@ -136,7 +137,7 @@
   &__button {
     margin: 30px auto;
     @include media-768 {
-      margin: 0 auto;
+      margin: 0 auto 30px auto;
     }
   }
 }

@@ -1,4 +1,41 @@
 <%= _.template(require('./../includes/header.html'))() %>
+
+<div class="container">
+    <div class="catalog-text-block">
+        <p>При выборе бытовой техники важную роль играет не только эстетический фактор, но и удобство пользования изделием, его безопасность и эргономика.
+            Если плита выбрана правильно, процесс приготовления пищи превращается в удовольствие. И напротив, совершив ошибку при покупке, впоследствии мы не единожды корим себя за поспешно принятое решение.
+            Сегодня в продаже представлены разные виды и типы кухонных плит, среди которых:</p>
+        <ul>
+            <li>газовые модели с газовыми и электрическими духовками, изделия с минимальным набором опций и многофункциональные варианты;</li>
+            <li>электрические плиты с чугунными конфорками и электродуховым шкафом;</li>
+            <li>электрические плиты с гладкой стеклокерамической поверхностью и электрической духовкой;</li>
+            <li>комбинированные бытовые плиты с газовыми и электрическими элементами варочной панели.</li>
+        </ul>
+
+
+    </div>
+
+</div>
+
+<div class="block-basic m-red">
+    <div class="container">
+        <div class="title-divider">
+            <div class="title-divider__line m-white"></div>
+            <h2 class="title-divider__text">Рекомендуем</h2>
+            <div class="title-divider__line  m-white"></div>
+        </div>
+
+        <div class="recommend">
+            <%= _.template(require('./../includes/product-block.html'))({ className: 'recommend__item' }) %>
+            <%= _.template(require('./../includes/product-block.html'))({ className: 'recommend__item m-nomobile-640' }) %>
+            <%= _.template(require('./../includes/product-block.html'))({ className: 'recommend__item m-nomobile-960' }) %>
+            <%= _.template(require('./../includes/product-block.html'))({ className: 'recommend__item m-nomobile-1440' }) %>
+
+        </div>
+    </div>
+</div>
+
+
 <div class="catalog" xmlns="http://www.w3.org/1999/html" >
     <div class="catalog__filter">
         <div class="catalog__filter-mobile">Фильтры</div>
