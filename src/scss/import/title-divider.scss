@@ -11,6 +11,9 @@
     text-transform: uppercase;
     text-align: center;
     word-wrap: normal;
+    &.m-red {
+      color: $colorPrimary;
+    }
     @include media-320 {
       font-size: 18px;
     }
@@ -22,6 +25,9 @@
     background-color: black;
     &.m-white {
       background-color: $colorWhite;
+    }
+    &.m-red {
+      background-color: $colorPrimary;
     }
   }
 }

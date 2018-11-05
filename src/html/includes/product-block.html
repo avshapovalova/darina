@@ -10,7 +10,11 @@
         </div>
         <a href="#" class="link__text">Добавить для сравнения</a>
     </div>
-    <div class="product-card__image"></div>
+    <div class="product-card__image">
+        <% if (sticker) { %>
+        <div class="shild"><%=sticker %></div>
+        <% } %>
+    </div>
     <div class="product-card__title">
         ГАЗОВАЯ ПЛИТА 1E8 GM241 015 Bg
     </div>
