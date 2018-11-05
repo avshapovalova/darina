@@ -19,4 +19,11 @@
     border-color: $colorWhite;
     color: $colorWhite;
   }
+  &.m-mobile{
+    margin: 0 auto;
+    display: none;
+    @include media-960 {
+      display:flex;
+    }
+  }
 }
