@@ -1,0 +1,37 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+<div class="block-basic">
+    <div class="container">
+        <div class="title-divider">
+            <div class="title-divider__line"></div>
+            <h2 class="title-divider__text">Часто задаваемые вопросы</h2>
+            <div class="title-divider__line"></div>
+        </div>
+    </div>
+</div>
+
+<div class="block-basic">
+    <div class="container">
+        <div class="title-divider">
+            <div class="title-divider__line"></div>
+            <h2 class="title-divider__text">Инструкции</h2>
+            <div class="title-divider__line"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="search-service">
+    <div class="search">
+        <form class="search__form">
+            <input class="search__input" type="text" placeholder="Пожалуйста, введите модель техники"/>
+            <input class="search__submit" type="submit" value=""/>
+        </form>
+    </div>
+    <button class="button">Искать</button>
+    </div>
+</div>
+
+
+
+<%= _.template(require('./../includes/compare-block.html'))() %>
+<%= _.template(require('./../includes/footer.html'))() %>
