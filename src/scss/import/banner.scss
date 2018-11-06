@@ -1,0 +1,13 @@
+.banner{
+  background: $colorGray400;
+  height: 491px;
+  @include media-960 {
+    height: 352px;
+  }
+  @include media-768 {
+    height: 305px;
+  }
+  @include media-320 {
+    height: 200px;
+  }
+}
