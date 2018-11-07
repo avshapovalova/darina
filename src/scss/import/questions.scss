@@ -1,0 +1,46 @@
+.questions{
+  padding-left: 115px;
+  padding-right: 115px;
+  margin-bottom:30px;
+  @include media-1440 {
+    padding:0px;
+  }
+  &__text{
+    border-bottom: 1px solid $colorGray500;
+  }
+  &__text-phone {
+    text-decoration: none;
+    color:$colorPrimary;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid $colorGray500;
+    align-items: center;
+    &.m-open{
+      border-bottom: none;
+    }
+  }
+  &__name{
+    margin-right: 40px;
+    text-overflow: ellipsis;
+    overflow:auto;
+    &.m-red {
+      color:$colorPrimary;
+    }
+  }
+  &__icon{
+    transform: translateY(2px);
+  }
+  &__accordion{
+    border-bottom: 1px solid $colorGray500;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    margin-right: 50px;
+  }
+}
+.questions-button {
+  margin: 0 auto 30px auto;
+}
