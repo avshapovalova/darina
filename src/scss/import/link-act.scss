@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  &.link-act-margin{
+    margin-top: 20px;
+
+  }
 }
 .link {
   &__text {
