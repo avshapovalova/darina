@@ -1,0 +1,53 @@
+.contacts {
+  margin-bottom: 30px;
+
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    @include media-640 {
+      display: block;
+    }
+
+  }
+  &__list{
+    width: calc(35% - 105px);
+    @include media-960 {
+      width: calc(45% - 40px);
+    }
+    @include media-768 {
+      width: calc(50% - 40px);
+    }
+    @include media-640 {
+      width: auto;
+    }
+
+  }
+  &__item{
+    display: flex;
+
+    margin-bottom: 20px;
+  }
+  &__icon{
+    margin-right: 25px;
+  }
+  &__phone{
+    font-weight: bold;
+  }
+
+  &__map{
+    background: $colorGray400;
+    width: 65%;
+    @include media-960 {
+      width: 55%;
+    }
+    @include media-768 {
+      width: 50%;
+
+    }
+    @include media-640 {
+      width: auto;
+      height: 430px;
+    }
+
+  }
+}
