@@ -1,0 +1,57 @@
+.regions {
+  &__listing{
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+  &__item{
+    list-style: none;
+    padding-inline-start: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-top: 1px solid $colorGray500;
+    color: $colorPrimary;
+    &.m-noactive{
+      color:$colorBlack;
+    }
+  }
+  &__obls{
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+  }
+  &__obl{
+    list-style: none;
+    padding-inline-start: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $colorPrimary;
+    font-weight: 600;
+    &.m-noactive{
+      color:$colorBlack;
+    }
+  }
+  &__cities{
+    margin: 0;
+
+    padding-left: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    &.m-noactive{
+      display: none;
+    }
+  }
+  &__city{
+    list-style: none;
+    padding-inline-start: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $colorBlack;
+  }
+}
