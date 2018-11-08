@@ -1,0 +1,226 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+<div class="container">
+    <h1 m-red>Ближайшие магазины</h1>
+    <div class="text-block-service">
+        <p>Найдите ближайшего к вам дилера Darina.<br>
+            Просто введите адрес и нажмите на кнопку "Искать".</p>
+        <p>Если вы хотите найти магазин, пожалуйста, позвоните по телефону: <a class="text-phone" href="tel:+78007758078">+7 800 775-80-78</a></p>
+    </div>
+    <div class="search">
+        <form class="search__form">
+            <input class="search__input" type="text" placeholder="Пожалуйста, введите город, индекс или улицу..."/>
+            <input class="search__submit" type="submit" value=""/>
+        </form>
+    </div>
+    <button class="button">Искать</button>
+
+    <div class="stores">
+        <div class="stores__listing">
+            <ul class="stores__ul">
+                <li class="stores__li">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+                <li class="stores__li">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+
+                <li class="stores__li m-active">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+
+                <li class="stores__li">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+
+                <li class="stores__li">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+
+                <li class="stores__li">
+                    <div class="stores__name">М.видео ТК Карусель 2.25 км </div>
+                    <div class="stores__address-title">Адрес</div>
+                    <div class="stores__address">Пулковское шоссе 19</div>
+                    <div class="stores__address">196240, Санкт-Петербург</div>
+                    <div class="stores__web-title">Веб-сайт</div>
+                    <a class="stores__web-link" href="https://www.mvideo.ru">https://www.mvideo.ru</a>
+
+                    <div class="stores__block1">
+
+                        <div class="stores__map-icon">
+                            <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                            </svg>
+
+                        </div>
+
+                        <a class="stores__map-link" href="#">
+                            Показать на карте
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="map"></div>
+    </div>
+
+    <div class="regions">
+        <h2 m-red>Поиск по регионам:</h2>
+
+            <ul class="regions__listing">
+                <li class="regions__li">Северо-Западный <span class="regions__qty">(74)</span>
+                    <ul class="regions__obls">
+                        <li class="regions__obl">Архангельская область <span class="regions__qty">(7)</span>
+                        <ul class="regions__cities">
+                            <li class="regions__city">Архангельск <span class="regions__qty">(7)</span></li>
+                            <li class="regions__city">Северодвинск <span class="regions__qty">(2)</span></li>
+                            <li class="regions__city">Котлас <span class="regions__qty">(3)</span></li>
+                            <li class="regions__city">Коряжма <span class="regions__qty">(4)</span></li>
+                            <li class="regions__city">Онега <span class="regions__qty">(5)</span></li>
+                            <li class="regions__city">Нарьян - Мар <span class="regions__qty">(1)</span></li>
+                        </ul>
+
+
+
+                        </li>
+                        <li class="regions__obl">Вологодская область <span class="regions__qty">(10)</span></li>
+                        <li class="regions__obl">Калининградская область <span class="regions__qty">(4)</span></li>
+                        <li class="regions__obl">Республика Карелия <span class="regions__qty">(8)</span></li>
+                        <li class="regions__obl">Ленинградская область <span class="regions__qty">(45)</span></li>
+
+                    </ul>
+
+
+
+                </li>
+                <li class="regions__li">Центральный <span class="regions__qty">(80)</span></li>
+                <li class="regions__li">Южный <span class="regions__qty">(199)</span></li>
+                <li class="regions__li">Приволжский <span class="regions__qty">(74)</span></li>
+                <li class="regions__li">Уральский <span class="regions__qty">(74)</span></li>
+                <li class="regions__li">Сибирский <span class="regions__qty">(9)</span></li>
+                <li class="regions__li">Дальневосточный <span class="regions__qty">(123)</span></li>
+                <li class="regions__li">Северо - Кавказский <span class="regions__qty">(749)</span></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<%= _.template(require('./../includes/compare-block.html'))() %>
+<%= _.template(require('./../includes/footer.html'))() %>
+

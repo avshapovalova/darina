@@ -1,0 +1,77 @@
+.stores{
+  margin-top: 30px;
+  height: 670px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  @include media-640 {
+    display: block;
+    height: auto;
+  }
+  &__name{
+    color:$colorPrimary;
+  }
+  &__listing{
+    overflow: scroll;
+    width: calc(35% - 30px);
+    @include media-640 {
+      width: 100%;
+      height: 670px;
+      overflow: scroll;
+    }
+  }
+  &__ul{
+    list-style: none;
+    padding-inline-start: 0px;
+  }
+  &__li{
+    border-bottom: 1px solid $colorGray500;
+    padding-bottom: 25px;
+
+
+    &.m-active{
+      background: $colorGray500;
+    }
+  }
+
+  &__li + &__li {
+    padding-top: 25px;
+  }
+
+
+  &__address{
+    margin-bottom:18px;
+  }
+  &__web-link{
+
+    text-decoration: none;
+    color:$colorBlack;
+    margin-bottom: 10px;
+    display: block;
+
+  }
+
+  &__map-link {
+    display: block;
+    text-decoration: none;
+    color:$colorBlack;
+  }
+
+
+&__block1{
+  display: flex;
+  align-items: center;
+}
+
+}
+
+.map{
+  width:65%;
+  background: $colorGray400;
+  @include media-640 {
+    width: 100%;
+    height: 430px;
+
+  }
+
+}
