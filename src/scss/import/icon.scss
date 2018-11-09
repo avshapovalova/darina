@@ -36,8 +36,9 @@
     @include media-640 {
       margin: 0 auto;
       margin-bottom: 30px;
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
+
     }
   }
   &.m-center {
@@ -55,5 +56,16 @@
     background: none;
     margin-right: 10px;
   }
+  &.m-small-svg {
+    @include media-640 {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      width: 60px;
+      height: 60px;
+      & svg {
+        width: 60%;
+      }
 
+    }
+  }
 }

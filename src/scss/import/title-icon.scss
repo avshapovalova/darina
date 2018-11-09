@@ -3,9 +3,10 @@
   margin: 35px auto;
   align-items: flex-end;
   max-width: 783px;
-  @include media-320 {
+  @include media-640 {
     display: block;
     width: auto;
+
   }
   &.title-icon-partners{
     align-items: center;
@@ -15,7 +16,7 @@
     font-size: 16px;
     margin-left: 60px;
     width: calc(100% - 180px);
-    @include media-320 {
+    @include media-640 {
       margin-left: 0px;
       width:auto;
 
@@ -28,7 +29,7 @@
     font-size: 24px;
     text-transform: uppercase;
     padding-bottom: 20px;
-    @include media-320 {
+    @include media-640 {
       width: auto;
     }
   }
