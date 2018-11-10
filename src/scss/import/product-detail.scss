@@ -25,6 +25,7 @@
       display: block;
     }
   }
+
   &__block2{
     width: calc(50% - 100px);
     @include media-1200 {
@@ -57,22 +58,20 @@
     @include media-320 {
       height: 240px;
     }
-
-
   }
+
   &__zoom{
     //width: calc(50% - 100px);
     text-align: center;
     margin: 25px auto 0 auto;
 
-
-
   }
+
   &__zoom-text{
     display: inline-block;
     transform: translateY(-7px);
-
   }
+
   &__content{
     width: 50%;
     display: flex;
@@ -94,14 +93,47 @@
       width: auto;
     }
   }
+
   &__divider{
     height: 2px;
     background: $colorBlack;
     width: 190px;
   }
+
   &__button{
     width: 195px;
   }
 
+  &__docs{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @include media-768 {
+      display: block;
+    }
+  }
+
+  &__docs-links{
+    @include media-768 {
+    margin-bottom: 20px;
+    }
+
+
 }
 
+  &__docs-text{
+    width: 70%;
+
+    @include media-1200 {
+      width: 60%;
+    }
+    @include media-960 {
+      width: 50%;
+    }
+    @include media-768 {
+      width: auto;
+    }
+  }
+
+}
