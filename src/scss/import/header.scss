@@ -49,18 +49,21 @@
     justify-content: space-between;
     align-items: center;
     width: calc(64% - 370px);
+
+
     @include media-1440 {
-      width: calc(64% - 225px);
+      width: calc(64% - 180px);
+      padding-right: 85px;
     }
     @include media-1200 {
-      width: calc(50% - 150px);
+      width: calc(50% - 100px);
       padding-right: 100px;
     }
     @include media-960 {
-      width: calc(50% - 100px);
+      width: calc(50% - 60px);
     }
     @include media-768 {
-      width: calc(50% - 50px);
+      width: calc(50% - 30px);
     }
     @include media-640 {
       display: none;
@@ -94,8 +97,13 @@
     text-decoration: none;
     white-space: nowrap;
     transform: translateY(2px);
+    @include media-1200 {
+      margin-left: 5px;
+    }
     @include media-960 {
       font-size: 18px;
+
+
     }
   }
 

@@ -1,7 +1,7 @@
 .banner{
   background: $colorGray400;
   @include media-960 {
-    height: 352px;
+   height: 352px;
   }
   @include media-768 {
     height: 305px;
@@ -16,5 +16,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include media-960 {
+      height: 352px;
+    }
+    @include media-768 {
+      height: 305px;
+    }
+    @include media-320 {
+      height: 200px;
+    }
   }
 }
