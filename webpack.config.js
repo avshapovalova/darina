@@ -98,9 +98,13 @@ module.exports = {
         to: './img'
       },
       {
+        from: './src/js',
+        to: './js'
+      },
+      {
         from: './src/uploads',
         to: './uploads'
-      }
+      },
     ]),
   ].concat(htmlPlugins)
 };

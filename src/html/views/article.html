@@ -1,4 +1,5 @@
 <%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 <div class="container">
     <h1>Эффективная и долговечная работа духовки: полезные советы и рекомендации</h1>
@@ -115,6 +116,10 @@
     </div>
 </div>
 
+<script src="/js/PageArticle.js"></script>
+<script type="application/javascript">
+  PageArticle.init()
+</script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
 <%= _.template(require('./../includes/footer.html'))() %>

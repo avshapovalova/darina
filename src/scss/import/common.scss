@@ -2,8 +2,8 @@
 
 ul, li {
   margin: 0;
-  //padding: 0;
-
+  padding: 0;
+  list-style: none;
 }
 
 html, body {
@@ -21,22 +21,18 @@ html, body {
   margin: 0 auto;
   padding: 0 20px;
   @include media-1440 {
-    max-width: 1280px;
+    max-width: unset;
+    padding: 0 20px;
   }
   @include media-1200 {
-    max-width: 1031px;
   }
   @include media-960 {
-    padding: 0 10px;
-    max-width: 780px;
   }
   @include media-768 {
-    max-width: 630px;
   }
   @include media-640 {
-    max-width: 510px;
+    padding: 0 40px;
   }
   @include media-320 {
-    max-width: 256px;
   }
 }

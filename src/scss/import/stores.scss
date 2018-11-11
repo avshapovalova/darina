@@ -22,14 +22,13 @@
   }
   &__ul{
     list-style: none;
-    padding-inline-start: 0px;
   }
   &__li{
     border-bottom: 1px solid $colorGray500;
+    padding-left: 20px;
     padding-bottom: 25px;
 
-
-    &.m-active{
+    &.m-active {
       background: $colorGray500;
     }
   }
@@ -54,6 +53,7 @@
   &__map-link {
     display: block;
     text-decoration: none;
+    margin-left: 10px;
     color:$colorBlack;
   }
 

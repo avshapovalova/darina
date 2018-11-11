@@ -10,7 +10,13 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
+  transition: all 0.2s;
 
+  &:hover {
+    cursor: pointer;
+    border-color: $colorPrimary;
+    color: $colorPrimary;
+  }
   &.m-red {
     border-color: $colorPrimary;
     color: $colorPrimary;

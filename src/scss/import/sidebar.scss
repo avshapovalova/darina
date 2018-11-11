@@ -1,0 +1,76 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 103px;
+  background: $colorGray600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  transition: width 0.2s ease-out;
+
+  @include media-1200 {
+    &:not(.m-open) {
+      display: none;
+    }
+  }
+
+  &.m-open {
+    width: 460px;
+    & .sidebar__burger {
+      display: none;
+    }
+    & .sidebar__close {
+      display: block;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    position: relative;
+    width: 103px;
+    height: 100px;
+    border: none;
+    padding: 0 25px;
+    background: $colorGray600;
+
+    &-lines {
+      display: block;
+      height: 4px;
+      width: 100%;
+      background: $colorPrimary;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: $colorPrimary;
+        top: -12px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 4px;
+        width: 100%;
+        background: $colorPrimary;
+        bottom: -12px;
+      }
+    }
+  }
+
+  &__close {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 103px;
+    height: 100px;
+    border: none;
+    padding: 0 25px;
+    background: $colorGray600;
+  }
+}

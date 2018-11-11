@@ -1,4 +1,5 @@
 <%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 
 
@@ -132,22 +133,16 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </form>
-
             </div>
         </div>
-
-
-
-
     </div>
-
 </div>
 
+<script src="/js/PageContacts.js"></script>
+<script type="application/javascript">
+  PageContacts.init()
+</script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
 <%= _.template(require('./../includes/footer.html'))() %>

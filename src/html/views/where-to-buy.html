@@ -1,5 +1,7 @@
 <%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
 <div class="container">
     <h1 m-red>Ближайшие магазины</h1>
     <div class="text-block-service">
@@ -9,11 +11,13 @@
     </div>
     <div class="search">
         <form class="search__form">
-            <input class="search__input" type="text" placeholder="Пожалуйста, введите город, индекс или улицу..."/>
-            <input class="search__submit" type="submit" value=""/>
+            <div class="search__inner">
+                <input class="search__input" type="text" placeholder="Пожалуйста, введите город, индекс или улицу..."/>
+                <input class="search__icon" type="submit" value=""/>
+            </div>
+            <button class="search__submit button" type="submit">Искать</button>
         </form>
     </div>
-    <button class="button">Искать</button>
 
     <div class="stores">
         <div class="stores__listing">
@@ -172,52 +176,91 @@
         <h2 m-red>Поиск по регионам:</h2>
 
             <ul class="regions__listing">
-                <li class="regions__item">Северо-Западный <span class="regions__qty">(74)</span>
+                <li class="regions__item m-active">
+                    <a href="#" class="regions__link">Северо-Западный <span class="regions__qty">(74)</span></a>
                     <ul class="regions__obls">
-                        <li class="regions__obl">Архангельская область <span class="regions__qty">(7)</span>
-                        <ul class="regions__cities">
-                            <li class="regions__city">Архангельск <span class="regions__qty">(7)</span></li>
-                            <li class="regions__city">Северодвинск <span class="regions__qty">(2)</span></li>
-                            <li class="regions__city">Котлас <span class="regions__qty">(3)</span></li>
-                            <li class="regions__city">Коряжма <span class="regions__qty">(4)</span></li>
-                            <li class="regions__city">Онега <span class="regions__qty">(5)</span></li>
-                            <li class="regions__city">Нарьян - Мар <span class="regions__qty">(1)</span></li>
-                        </ul>
-
-
-
-                        </li>
-                        <li class="regions__obl m-noactive">Вологодская область <span class="regions__qty">(10)</span>
-
-                            <ul class="regions__cities m-noactive">
-                                <li class="regions__city">Архангельск <span class="regions__qty">(7)</span></li>
-                                <li class="regions__city">Северодвинск <span class="regions__qty">(2)</span></li>
-                                <li class="regions__city">Котлас <span class="regions__qty">(3)</span></li>
-                                <li class="regions__city">Коряжма <span class="regions__qty">(4)</span></li>
-                                <li class="regions__city">Онега <span class="regions__qty">(5)</span></li>
-                                <li class="regions__city">Нарьян - Мар <span class="regions__qty">(1)</span></li>
+                        <li class="regions__obl m-active">
+                            <a href="#" class="regions__link">Архангельская область <span class="regions__qty">(7)</span></a>
+                            <ul class="regions__cities m-active">
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Архангельск <span class="regions__qty">(7)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Северодвинск <span class="regions__qty">(2)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Котлас <span class="regions__qty">(3)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Коряжма <span class="regions__qty">(4)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Онега <span class="regions__qty">(5)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Нарьян - Мар <span class="regions__qty">(1)</span></a>
+                                </li>
                             </ul>
-
-
-
-
                         </li>
-                        <li class="regions__obl m-noactive">Калининградская область <span class="regions__qty">(4)</span></li>
-                        <li class="regions__obl m-noactive">Республика Карелия <span class="regions__qty">(8)</span></li>
-                        <li class="regions__obl m-noactive">Ленинградская область <span class="regions__qty">(45)</span></li>
+                        <li class="regions__obl">
+                            <a href="#" class="regions__link">Вологодская область <span class="regions__qty">(10)</span></a>
+                            <ul class="regions__cities">
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Архангельск <span class="regions__qty">(7)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Северодвинск <span class="regions__qty">(2)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Котлас <span class="regions__qty">(3)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Коряжма <span class="regions__qty">(4)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Онега <span class="regions__qty">(5)</span></a>
+                                </li>
+                                <li class="regions__city">
+                                    <a href="#" class="regions__link">Нарьян - Мар <span class="regions__qty">(1)</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="regions__obl">
+                            <a href="#" class="regions__link">Калининградская область <span class="regions__qty">(4)</span></a>
+                        </li>
+                        <li class="regions__obl">
+                            <a href="#" class="regions__link">Республика Карелия <span class="regions__qty">(8)</span></a>
+                        </li>
+                        <li class="regions__obl">
+                            <a href="#" class="regions__link">Ленинградская область <span class="regions__qty">(45)</span></a>
+                        </li>
 
                     </ul>
 
 
 
                 </li>
-                <li class="regions__item m-noactive">Центральный <span class="regions__qty">(80)</span></li>
-                <li class="regions__item m-noactive">Южный <span class="regions__qty">(199)</span></li>
-                <li class="regions__item m-noactive">Приволжский <span class="regions__qty">(74)</span></li>
-                <li class="regions__item m-noactive">Уральский <span class="regions__qty">(74)</span></li>
-                <li class="regions__item m-noactive">Сибирский <span class="regions__qty">(9)</span></li>
-                <li class="regions__item m-noactive">Дальневосточный <span class="regions__qty">(123)</span></li>
-                <li class="regions__item m-noactive">Северо - Кавказский <span class="regions__qty">(749)</span></li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Центральный <span class="regions__qty">(80)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Южный <span class="regions__qty">(199)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Приволжский <span class="regions__qty">(74)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Уральский <span class="regions__qty">(74)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Сибирский <span class="regions__qty">(9)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Дальневосточный <span class="regions__qty">(123)</span></a>
+                </li>
+                <li class="regions__item">
+                    <a href="#" class="regions__link">Северо - Кавказский <span class="regions__qty">(749)</span></a>
+                </li>
             </ul>
 
 
@@ -227,6 +270,11 @@
 
 
 </div>
+
+<script src="/js/PageWhereToBuy.js"></script>
+<script type="application/javascript">
+  PageWhereToBuy.init()
+</script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
 <%= _.template(require('./../includes/footer.html'))() %>

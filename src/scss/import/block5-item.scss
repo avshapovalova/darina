@@ -1,20 +1,17 @@
 .block5 {
   display: flex;
   justify-content: space-between;
+
   &__image{
     height: 202px;
-    width: auto;
+    width: 100%;
     background: $colorGray400;
     @include media-768 {
       height: 150px;
-
     }
-
-
     @include media-320 {
       height: 240px;
       width: 240px;
-
     }
   }
   &__name{
@@ -23,13 +20,15 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-
 }
+
 .block5-item {
   width: calc(20% - 80px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+
   @include media-1440 {
     width: calc(25% - 80px);
   }
@@ -41,15 +40,12 @@
   }
   @include media-768 {
     width: calc(33% - 20px);
-
   }
   @include media-640 {
     width: calc(50% - 20px);
-
   }
   @include media-320 {
     width: auto;
-
   }
   &.m-no-1440{
     @include media-1440 {
@@ -72,6 +68,7 @@
     }
   }
 }
+
 .block5-product {
   &__name {
     text-transform: none;
@@ -82,6 +79,6 @@
     margin-bottom: 20px;
   }
 }
+
 .block5-button {
-  width: 142px;
 }

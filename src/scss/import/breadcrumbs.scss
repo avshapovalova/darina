@@ -8,9 +8,10 @@
   @include media-768 {
     min-height: 30px;
   }
-  @include media-320 {
-   min-height: 25px;
+  @include media-640 {
+    min-height: 25px;
     font-size: 12px;
+    padding: 10px 0 8px 0;
   }
 
   &__link{

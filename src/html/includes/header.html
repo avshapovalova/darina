@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.bundle.css">
+    <link rel="stylesheet" href="/js/libs/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/js/libs/owl/assets/owl.theme.default.min.css">
     <title>title</title>
 </head>
 <body>
+<script src="/js/libs/jquery-3.3.1.min.js"></script>
 <div class="container">
 <header class="header">
     <div class="header__left">
         <div class="search header-search">
-        <form class="search__form">
-            <input class="search__input" type="text"/>
-            <input class="search__submit" type="submit" value=""/>
+        <form class="search__form header-search__form">
+            <div class="search__inner header-search__inner">
+                <input class="search__input header-search__input" type="text"/>
+                <input class="search__icon header-search__icon" type="submit" value=""/>
+            </div>
         </form>
         </div>
         <div class="header__logo">
@@ -36,7 +41,7 @@
                 <path d="M4.83721 1.95345C5.9186 1.35313 7.17442 1 8.5 1C12.6512 1 16 4.39005 16 8.5923C16 12.7945 8.5 23 8.5 23C8.5 23 1 12.7945 1 8.5923C1 7.42697 1.24419 6.33226 1.73256 5.3435" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M8.50173 11.9826C10.3127 11.9826 11.7808 10.4964 11.7808 8.66317C11.7808 6.82991 10.3127 5.34375 8.50173 5.34375C6.69075 5.34375 5.22266 6.82991 5.22266 8.66317C5.22266 10.4964 6.69075 11.9826 8.50173 11.9826Z" stroke="#EE3A39" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
             </svg>
-            <div class="header__city">Санкт - Петербург</div>
+            <a href="#" class="header__city js-header-city">Санкт - Петербург</a>
         </div>
 
         <div class="social-links">
@@ -62,6 +67,9 @@
 
 
     </div>
-
+    <button class="header__burger js-mobile-burger">
+        <span class="header__burger-lines"></span>
+    </button>
 </header>
 </div>
+<div class="shader js-shader"></div>
