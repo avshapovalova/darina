@@ -2,8 +2,6 @@
 <%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 
-
-
 <div class="container">
 
     <h1>Чайковский филиал АО “Газпром бытовые системы”</h1>
@@ -56,80 +54,81 @@
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Название вашей компании">
+                        <input class="contact-us__input" type="text" placeholder="Название вашей компании">
                         <div class="contact-us__circle"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Город">
+                        <input class="contact-us__input" type="text" placeholder="Город">
                         <div class="contact-us__circle m-red"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Контактный телефон">
+                        <input class="contact-us__input" type="text" placeholder="Контактный телефон">
                         <div class="contact-us__circle m-red"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Email">
+                        <input class="contact-us__input" type="text" placeholder="Email">
                         <div class="contact-us__circle m-red"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Название модели">
+                        <input class="contact-us__input" type="text" placeholder="Название модели">
                         <div class="contact-us__circle m-red"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Дата выпуска">
+                        <input class="contact-us__input" type="text" placeholder="Дата выпуска">
                         <div class="contact-us__circle"></div>
                     </div>
 
                     <div class="contact-us__block1">
-                    <input class="contact-us__input" type="text" placeholder="Заводской номер">
+                        <input class="contact-us__input" type="text" placeholder="Заводской номер">
                         <div class="contact-us__circle "></div>
                     </div>
 
-                    <div class="contact-us__block1 block1-radios">
-                        <div class="contact-us__circle m-red"></div>
-                        <div class="contact-us__block2">Выберите предпочтительный способ связи</div>
-
-                        <div class="contact-us__radios">
-                            <div class="contact-us__block3">
-                                <input class="contact-us__radio" type="radio" id="phone">
-                                <label class="contact-us__label" for="phone">Телефон</label>
+                    <div class="contact-us__block1">
+                        <div class="contact-us__left">
+                            Выберите предпочтительный способ связи
+                        </div>
+                        <div class="contact-us__right">
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r-phone" name="radio-group" checked>
+                                <label for="r-phone">Телефон</label>
                             </div>
-                           <div class="contact-us__block3">
-                               <input class="contact-us__radio" type="radio" id="email">
-                                <label class="contact-us__label" for="email">Email</label>
-                           </div>
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r-email" name="radio-group">
+                                <label for="r-email">Email</label>
+                            </div>
                         </div>
                     </div>
+
                     <div class="contact-us__block1">
                         <input class="contact-us__input" type="text" placeholder="Удобное время для связи">
                         <div class="contact-us__circle "></div>
                     </div>
 
-                    <div class="contact-us__block1 block1-radios">
-                        <div class="contact-us__circle m-red"></div>
-                        <div class="contact-us__block2">Выберите категорию сообщения</div>
-
-                        <div class="contact-us__radios">
-                            <div class="contact-us__block3">
-                                <input class="contact-us__radio" type="radio" id="question">
-                                <label class="contact-us__label" for="question">Задать вопрос</label>
+                    <div class="contact-us__block1">
+                        <div class="contact-us__left">
+                            Выберите категорию сообщения
+                        </div>
+                        <div class="contact-us__right">
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r1" name="radio-group" checked>
+                                <label for="r1">Задать вопрос</label>
                             </div>
-                            <div class="contact-us__block3">
-                                <input class="contact-us__radio" type="radio" id="thanks">
-                                <label class="contact-us__label" for="thanks">Выразить благодарность</label>
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r2" name="radio-group">
+                                <label for="r2">Выразить благодарность</label>
                             </div>
-                            <div class="contact-us__block3">
-                                <input class="contact-us__radio" type="radio" id="info">
-                                <label class="contact-us__label" for="info">Сообщать информацию</label>
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r3" name="radio-group">
+                                <label for="r3">Сообщать информацию</label>
                             </div>
-                            <div class="contact-us__block3">
-                                <input class="contact-us__radio" type="radio" id="claim">
-                                <label class="contact-us__label" for="claim">Высказать претензию</label>
+                            <div class="radio contact-us__radio">
+                                <input type="radio" id="r4" name="radio-group">
+                                <label for="r4">Высказать претензию</label>
                             </div>
                         </div>
                     </div>
