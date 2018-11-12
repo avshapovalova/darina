@@ -19,10 +19,10 @@ html, body {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding:  0 100px 0 20px;
   @include media-1440 {
     max-width: unset;
-    padding: 0 20px;
+    padding: 0 120px 0 20px;
   }
   @include media-1200 {
   }

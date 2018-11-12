@@ -1,78 +1,97 @@
 .recall{
-  &__block1{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__block2{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  &__username{
-    color:$colorPrimary;
-  }
-  &__yaMarket{
-    &.m-nomobile{
-      @include media-960 {
-        display: none;
-      }
-    }
-  }
-  &__date{
-    &.m-nomobile{
-      @include media-960 {
-        display: none;
-      }
-    }
-  }
-  &__content{
-    display: flex;
-    justify-content: space-between;
+  &__top{
     margin-bottom: 30px;
+
+  }
+
+  &__qty{
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  &__divider{
+    height: 2px;
+    width: 100%;
+    background: $colorBlack;
+  }
+
+  &__bottom {
     margin-top: 30px;
-    @include media-960 {
-      display: block;
-    }
-
   }
-  &__left{
-    width: calc(88% - 150px);
-    @include media-1440 {
-      width: calc(85% - 150px);
+    &__block1 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
     }
-    @include media-1200 {
-      width: calc(80% - 100px);
+    &__block2 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
     }
-    @include media-960 {
-      width: auto;
-
+    &__username {
+      color: $colorPrimary;
     }
-    @include media-768 {
-      margin-bottom: 40px ;
-    }
-
-  }
-  &__right{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 160px;
-    @include media-960 {
-      margin: 30px auto 0 auto;
-    }
-    &.m-nomobile{
-      @include media-768 {
-        display: none;
+    &__yaMarket {
+      &.m-nomobile {
+        @include media-960 {
+          display: none;
+        }
       }
     }
+    &__date {
+      &.m-nomobile {
+        @include media-960 {
+          display: none;
+        }
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      @include media-960 {
+        display: block;
+      }
 
-  }
-  &__title{
-    margin-bottom: 7px;
-  }
-  &__advantage, &__flaw{
-    margin-bottom: 20px;
-  }
+    }
+    &__left {
+      width: calc(88% - 150px);
+      @include media-1440 {
+        width: calc(85% - 150px);
+      }
+      @include media-1200 {
+        width: calc(80% - 100px);
+      }
+      @include media-960 {
+        width: auto;
+
+      }
+      @include media-768 {
+        margin-bottom: 40px;
+      }
+
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 160px;
+      @include media-960 {
+        margin: 30px auto 0 auto;
+      }
+      &.m-nomobile {
+        @include media-768 {
+          display: none;
+        }
+      }
+
+    }
+    &__title {
+      margin-bottom: 7px;
+    }
+    &__advantage, &__flaw {
+      margin-bottom: 20px;
+    }
 
 }

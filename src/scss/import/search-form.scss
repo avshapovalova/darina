@@ -30,6 +30,12 @@
       }
     }
   }
+  &__input:focus{
+    outline: none;
+  }
+  &__input:focus::-webkit-input-placeholder {
+    color:transparent; }
+
   &__icon {
     cursor: pointer;
     position: absolute;
@@ -55,9 +61,26 @@
       margin-left: 0;
     }
   }
+
+  &__result{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 65px;
+  }
+
+  &__li{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &__result-link{
+    color: $colorPrimary;
+    text-decoration: none;
+  }
+
+  &__result-format{
+    display: inline;
+  }
+
 }
-.search-service {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 120px;
-}
+
