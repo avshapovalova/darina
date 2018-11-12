@@ -168,7 +168,27 @@
 
 <div class="popup city-popup js-city-popup">
     <div class="popup__title">Ваш город</div>
-    <div class="popup__body">content todo</div>
+    <div class="popup__body">
+        <form>
+            <div class="popup__inner">
+                <input class="popup__input" type="text" value="Санкт - Петербург"/>
+                <input class="popup__icon-loc" type="submit" value="">
+            </div>
+            <div class="popup__buttons">
+                <button class="popup__button" type="submit">Да</button>
+                <button class="popup__button" type="submit">Нет</button>
+            </div>
+            <div class="popup__inner">
+                <input class="popup__input" type="text" value="Моск"/>
+                <input class="popup__icon-search" type="submit" value="">
+            </div>
+            <div class="popup__result m-open">
+                <div class="popup__city">Новомосковск (Тульская обл)</div>
+                <div class="popup__city">Москва (Москва г)</div>
+                <div class="popup__city">Московский (Москва г)</div>
+            </div>
+        </form>
+    </div>
 </div>
 
 <script src="/js/libs/owl/owl.carousel.min.js"></script>

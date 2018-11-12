@@ -23,6 +23,9 @@
     & .sidebar__close {
       display: block;
     }
+    @include media-640{
+      width: 320px;
+    }
   }
 
   &__burger {
@@ -74,8 +77,15 @@
     background: $colorGray600;
   }
 
+  &__body{
+    overflow: auto;
+  }
+
   &__menu{
     margin-left: 60px;
+    @include media-640{
+      margin-left: 20px;
+    }
 
     &.m-sub{
       color: #898989;

@@ -6,9 +6,18 @@
     display: flex;
     position: relative;
     margin-bottom: 15px;
+    //align-items: center;
+    &.block1-part{
+      width: 50%;
+    }
   }
   &__left {
-    width: 30%;
+    width: 35%;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 40px;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
   &__right {
     flex: 1;
@@ -16,6 +25,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
   &__radio {
     width: 50%;
@@ -29,6 +41,16 @@
     padding-top: 18px;
     padding-bottom: 15px;
     width: 100%;
+  }
+
+  &__textarea{
+    display: block;
+    border:none;
+    background: $colorGray500;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    width: 100%;
+    min-height: 180px;
 
   }
   &__circle {
@@ -42,8 +64,11 @@
     &.m-red {
       background:$colorPrimary;
     }
+    .m-black {
+      background: $colorBlack;
+    }
   }
-  &__input::placeholder {
+  &__input::placeholder, &__textarea::placeholder {
     font-size: 18px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -53,4 +78,10 @@
       font-size: 12px;
     }
   }
+  &__captcha {
+    width: 210px;
+    height: 54px;
+    background: $colorGray400;
+  }
+
 }
