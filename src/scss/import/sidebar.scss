@@ -73,23 +73,44 @@
     padding: 0 25px;
     background: $colorGray600;
   }
+
   &__menu{
+    margin-left: 60px;
+
     &.m-sub{
-      display: none;
+      color: #898989;
+      margin-left:25px;
     }
+
   }
 
   &__item{
     display: flex;
     align-items: center;
-    margin-left: 60px;
-    margin-bottom: 20px;
+
+    margin-bottom: 15px;
+
   }
+
   &__icon{
     margin-right: 20px;
   }
+
   &__text{
     text-transform: uppercase;
     font-size: 18px;
+  }
+
+  &:not(.m-open) {
+    .sidebar__menu.m-sub {
+      display: none;
+    }
+    .sidebar__menu {
+      margin-left:25px;
+    }
+    .sidebar__text {
+      display: none;
+    }
+
   }
 }
