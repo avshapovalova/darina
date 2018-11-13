@@ -2,13 +2,40 @@
 <%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 
-<div class="banner"></div>
+<div class="carousel">
+    <div class="owl-carousel carousel__content banner js-banner">
+        <div class="banner__slide">
+            <img src="https://www.mercedes-mbr.ru/content/dam/russia/retailer/retail-1/mercedes-benz-rus/about/partners/partners-715x230.jpg.asset.AX-gpCTlCoJVVJe9Oc4pvVNm8V-KwuDLMmUazX0oR6w.jpg"/>
+        </div>
+        <div class="banner__slide">
+            <img src="http://www.toffliners.com/wp-content/uploads/2016/09/33243-1024x768.jpg"/>
+        </div>
+        <div class="banner__slide"> <img src="http://www.toffliners.com/wp-content/uploads/2016/09/33243-1024x768.jpg"/></div>
+        <div class="banner__slide"> <img src="http://www.toffliners.com/wp-content/uploads/2016/09/33243-1024x768.jpg"/></div>
+    </div>
+    <div class="carousel__dots js-banner-dots"></div>
+</div>
+
 <div class="container">
+
+    <div class="reds">
+        <div class="reds__part2">
+            <div class="reds__item reds2">Условия сотрудничества</div>
+            <div class="reds__item reds2">Презентации продукта</div>
+
+        </div>
+        <div class="reds__part2">
+            <div class="reds__item reds2">Сертификаты и инструкции на товары</div>
+            <div class="reds__item reds2">Сервисная документация</div>
+        </div>
+    </div>
+
     <div class="title-divider">
         <div class="title-divider__line m-red"></div>
         <h2 class="title-divider__text m-red">условия сотрудничества</h2>
         <div class="title-divider__line m-red"></div>
     </div>
+
 
     <div class="title-icon title-icon-partners">
         <div class="icon m-big">
@@ -70,7 +97,9 @@
         </div>
         <div class="block5">
             <div class="block5-item">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="http://www.posuda24.ru/shop/wa-data/public/shop/products/59/13/1359/images/1504/1504.750x0.jpg"/>
+                </div>
                 <div class="link-act">
                     <div class="icon m-link">
                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +117,9 @@
 
             </div>
             <div class="block5-item m-nomobile">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="http://www.posuda24.ru/shop/wa-data/public/shop/products/59/13/1359/images/1504/1504.750x0.jpg"/>
+                </div>
                 <div class="link-act">
                     <div class="icon m-link">
                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +137,9 @@
 
             </div>
             <div class="block5-item m-no-640">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="http://www.posuda24.ru/shop/wa-data/public/shop/products/59/13/1359/images/1504/1504.750x0.jpg"/>
+                </div>
                 <div class="link-act">
                     <div class="icon m-link">
                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +157,9 @@
 
             </div>
             <div class="block5-item m-no-960">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="http://www.posuda24.ru/shop/wa-data/public/shop/products/59/13/1359/images/1504/1504.750x0.jpg"/>
+                </div>
                 <div class="link-act">
                     <div class="icon m-link">
                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,11 +173,12 @@
                     </div>
                     <a class="link__text m-white" href="#">Презентация</a>
                 </div>
-
-
             </div>
+
             <div class="block5-item m-no-1440">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="http://www.posuda24.ru/shop/wa-data/public/shop/products/59/13/1359/images/1504/1504.750x0.jpg"/>
+                </div>
                 <div class="link-act link-act-margin">
                     <div class="icon m-link">
                         <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,18 +192,15 @@
                     </div>
                     <a class="link__text m-white" href="#">Презентация</a>
                 </div>
-
-
             </div>
-
-
         </div>
     </div>
 </div>
 
 
 
-<div class="container">
+
+    <div class="container">
 
         <div class="title-divider">
             <div class="title-divider__line m-red"></div>
@@ -394,9 +427,6 @@
                 </div>
             </div>
 
-
-
-
         </div>
 
 
@@ -413,6 +443,7 @@
 
 
         <div class="docs">
+
             <div class="docs__category">
                 <div class="docs__category-name">
                     <div class="docs__icon">
@@ -479,8 +510,6 @@
 
                 </div>
             </div>
-
-
 
             <div class="docs__category">
                 <div class="docs__category-name">
@@ -597,9 +626,6 @@
                 </div>
             </div>
 
-
-
-
         </div>
 
 
@@ -614,7 +640,9 @@
         </div>
         <div class="block5">
             <div class="block5-item block5-product">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="https://prava.expert/wp-content/uploads/2017/12/srok-ekspluatatsii-gazovoj-plity2.jpg"/>
+                </div>
                 <div class="block5__name block5-product-name">Варочная панель DARINA 4P E329 B</div>
                 <div class="link-act block5-product__link">
                     <div class="icon m-link">
@@ -633,7 +661,9 @@
             </div>
 
             <div class="block5-item m-nomobile">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="https://prava.expert/wp-content/uploads/2017/12/srok-ekspluatatsii-gazovoj-plity2.jpg"/>
+                </div>
                 <div class="block5__name block5-product-name">Варочная панель DARINA 4P E329 B</div>
                 <div class="link-act block5-product__link">
                     <div class="icon m-link">
@@ -651,7 +681,9 @@
 
             </div>
             <div class="block5-item m-no-640">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="https://prava.expert/wp-content/uploads/2017/12/srok-ekspluatatsii-gazovoj-plity2.jpg"/>
+                </div>
                 <div class="block5__name block5-product-name">Варочная панель DARINA 4P E329 B</div>
                 <div class="link-act block5-product__link">
                     <div class="icon m-link">
@@ -669,7 +701,9 @@
 
             </div>
             <div class="block5-item m-no-960">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="https://prava.expert/wp-content/uploads/2017/12/srok-ekspluatatsii-gazovoj-plity2.jpg"/>
+                </div>
                 <div class="block5__name block5-product-name">Варочная панель DARINA 4P E329 B</div>
 
                     <div class="link-act block5-product__link">
@@ -688,7 +722,9 @@
 
             </div>
             <div class="block5-item m-no-1440">
-                <div class="block5__image"></div>
+                <div class="block5__image">
+                    <img src="https://prava.expert/wp-content/uploads/2017/12/srok-ekspluatatsii-gazovoj-plity2.jpg"/>
+                </div>
                 <div class="block5__name block5-product__name">Варочная панель DARINA 4P E329 B</div>
                 <div class="link-act block5-product__link">
                     <div class="icon m-link">
@@ -710,6 +746,7 @@
         </div>
     </div>
 </div>
+
 
 <script src="/js/PagePartners.js"></script>
 <script type="application/javascript">

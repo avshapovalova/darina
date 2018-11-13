@@ -49,8 +49,16 @@
 
   &__image{
     width: 100%;
-    background: $colorGray400;
+    //background: $colorGray400;
     height: 400px;
+    overflow: hidden;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     @include media-768 {
       height: 307px;
     }

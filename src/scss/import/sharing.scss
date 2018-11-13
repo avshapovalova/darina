@@ -1,0 +1,28 @@
+.sharing{
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    margin-top:10px;
+    margin-bottom:30px;
+    &.nomargin{
+      margin-bottom:0px;
+    }
+  }
+  &__icon{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    &.sharing__svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $colorPrimary;
+      border-radius: 50%;
+    }
+  }
+
+
+}
+

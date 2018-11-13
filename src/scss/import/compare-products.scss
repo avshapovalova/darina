@@ -77,6 +77,12 @@
     background: $colorGray400;
     height: 292px;
     margin-bottom: 30px;
+    overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     @include media-1200 {
       height: 245px;
     }
@@ -92,6 +98,7 @@
     border:1px solid $colorGray400;
     height: 292px;
     margin-bottom: 30px;
+    overflow: hidden;
     @include media-1200 {
       height: 245px;
     }

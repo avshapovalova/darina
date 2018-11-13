@@ -119,6 +119,12 @@
     width: 50%;
     height: 308px;
     background: $colorGray400;
+    overflow: hidden;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
     @include media-960 {
       width: auto;
       margin-top:40px;
