@@ -20,10 +20,16 @@
     }
   }
   &__name{
+    display: block;
+    text-decoration: none;
+    color:$colorBlack;
     margin-right: 40px;
     font-weight: bold;
     text-overflow: ellipsis;
     overflow:auto;
+    &:hover{
+      color:$colorPrimary;
+    }
     &.m-red {
       color:$colorPrimary;
     }

@@ -64,6 +64,9 @@
   &__prod-link{
     color: $colorBlack;
     text-decoration: none;
+    &:hover{
+      color: $colorPrimary;
+    }
     @include media-768 {
     font-size: 14px;
     }
@@ -71,9 +74,17 @@
 
   &__name{
     margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+      color: $colorPrimary;
+    }
   }
 
   &__image-add{
+    display: block;
+    text-decoration: none;
     background: $colorGray400;
     height: 292px;
     margin-bottom: 30px;

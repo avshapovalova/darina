@@ -3,6 +3,8 @@
   justify-content: space-between;
 
   &__image{
+    display: block;
+    text-decoration: none;
     height: 202px;
     width: 100%;
     //background: $colorGray400;
@@ -21,10 +23,17 @@
     }
   }
   &__name{
+    display: block;
+    text-decoration: none;
+    color: $colorBlack;
     text-transform: uppercase;
     font-size: 16px;
     padding-top: 25px;
     padding-bottom: 25px;
+    &.m-white{
+      color:$colorWhite;
+    }
+
   }
 }
 
@@ -80,11 +89,12 @@
     text-transform: none;
     line-height: normal;
     font-size: 16px;
+    &:hover{
+      color:$colorPrimary;
+    }
   }
   &__link{
     margin-bottom: 20px;
   }
 }
 
-.block5-button {
-}

@@ -13,6 +13,7 @@
   }
 
   &__logo {
+    text-decoration: none;
     width: calc(50% - 50px);
     @include media-1200 {
       width: 50%;

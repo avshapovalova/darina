@@ -15,6 +15,9 @@
     line-height: normal;
     font-size: 16px;
     padding-top: 5px;
+    &:hover{
+      color:$colorPrimary;
+    }
 
     &.m-white {
       color: $colorWhite;

@@ -51,6 +51,15 @@
     }
   }
 
+  &__link{
+    color: $colorBlack;
+    transition: all 0.2s;
+    text-decoration: none;
+    &:hover{
+      color: $colorPrimary;
+    }
+  }
+
   &__list {
     width: calc(100% - 256px - 70px);
     @include media-768 {
@@ -97,11 +106,17 @@
     }
   }
   &__item-title {
+    display: block;
+    text-decoration: none;
+    color: $colorBlack;
     font-size: 24px;
     text-transform: uppercase;
     max-width: 400px;
     @include media-320 {
       font-size: 18px;
+    }
+    &:hover{
+      color: $colorPrimary;
     }
   }
   &__item-text {
@@ -116,6 +131,8 @@
 
   }
   &__item-image {
+    display: block;
+    text-decoration: none;
     width: 50%;
     height: 308px;
     background: $colorGray400;

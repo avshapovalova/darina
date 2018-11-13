@@ -10,20 +10,24 @@
     line-height: 1.5;
   }
 
-
   &__link{
     color: $colorBlack;
     text-decoration: none;
     font-size: 18px;
-
   }
   &__link.m-active{
     color: $colorPrimary
-
   }
 
+  &__left{
+    display: block;
+    text-decoration: none;
+  }
 
-
+  &__right{
+    display: block;
+    text-decoration: none;
+  }
 
 }
 

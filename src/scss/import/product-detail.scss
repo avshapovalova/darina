@@ -77,7 +77,12 @@
 
   &__zoom-text{
     display: inline-block;
+    text-decoration: none;
+    color: inherit;
     transform: translateY(-7px);
+    &:hover{
+      color: $colorPrimary;
+    }
   }
 
   &__content{
