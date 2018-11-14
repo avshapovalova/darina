@@ -17,12 +17,14 @@
   @include media-640 {
     margin: 0 auto;
   }
-}
-.slider-item-button {
-  @include media-640 {
-    margin: 0 auto 20px auto;
+  &__button{
+    width: 160px;
+    @include media-640 {
+      margin: 0 auto 20px auto;
+    }
   }
 }
+
 .slider {
   &__block1 {
     display: flex;
@@ -51,8 +53,17 @@
     }
   }
   &__name {
+    text-decoration: none;
+    color:inherit;
+    display: block;
     text-transform: uppercase;
     font-size: 14px;
+    &:hover{
+      color: $colorPrimary;
+    }
+    &.m-nohover:hover{
+      color:inherit;
+    }
   }
 
   &__divider {
@@ -71,7 +82,8 @@
   }
 
   &__image{
-
+    display: block;
+    text-decoration: none;
     //background: $colorGray400;
     width:50%;
     height: 306px;

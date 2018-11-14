@@ -43,6 +43,10 @@
     }
 
   }
+  &__button{
+    width: 175px;
+    margin: 0 auto;
+  }
 
 
   &__title{
@@ -63,7 +67,6 @@
     margin-bottom: 30px;
     @include media-640 {
       font-size: 12px;
-
     }
 
   }

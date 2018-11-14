@@ -1,15 +1,15 @@
 const PageProductCard = {
   init: function() {
     console.log('PageProductCard.init')
-    this.initSliderVideo()
+    this.initSliderProducts()
   },
 
-  initSliderVideo: function(){
+  initSliderProducts: function(){
     $(document).ready(function(){
-      $(".js-slider-video").owlCarousel({
+      $(".js-slider-products").owlCarousel({
         nav: false,
         dots: true,
-        dotsContainer: '.js-slider-video-dots',
+        dotsContainer: '.js-slider-products-dots',
         items: 1,
       })
     });

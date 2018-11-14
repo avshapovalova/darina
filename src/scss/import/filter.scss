@@ -19,8 +19,10 @@
   }
   &__item {}
   &__item-block1{
-    display: flex;
     margin-bottom: 20px;
+  }
+  &__item-label{
+    transform: translateY(2px);
   }
 
 
@@ -29,13 +31,5 @@
     font-size: 18px;
     text-transform: uppercase;
     color: $colorPrimary;
-  }
-  &__item-option {
-    display: block;
-    font-size: 16px;
-   margin: 0 0 0 30px;
-    &.m-active {
-      color: $colorPrimary;
-    }
   }
 }
