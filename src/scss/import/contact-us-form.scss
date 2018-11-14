@@ -104,10 +104,17 @@
 
   &__input:focus{
     outline: none;
+
   }
 
   &__input:focus::-webkit-input-placeholder {
     color:transparent;
+  }
+
+  &__input[type=text] {
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
   }
 
   &__textarea{
@@ -124,6 +131,26 @@
     outline: none;
   }
 
+  &__textarea:focus::-webkit-input-placeholder {
+    color:transparent;
+  }
+
+  &__textarea[type=text] {
+    width: 100%;
+    padding-left: 40px;
+    box-sizing: border-box;
+  }
+
+  &__input::placeholder, &__textarea::placeholder {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+    @include media-640 {
+      font-size: 12px;
+    }
+  }
+
   &__circle {
     top:23px;
     left: 23px;
@@ -137,17 +164,6 @@
     }
     .m-black {
       background: $colorBlack;
-    }
-  }
-
-  &__input::placeholder, &__textarea::placeholder {
-    font-size: 18px;
-    text-transform: uppercase;
-    padding-left: 40px;
-    color: rgba(0, 0, 0, 0.3);
-    transform: translateY(1px);
-    @include media-640 {
-      font-size: 12px;
     }
   }
 
