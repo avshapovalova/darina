@@ -9,6 +9,9 @@
   text-transform: uppercase;
 
   &__text {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     margin-left: 10px;
     transform: translateY(3px);
     @include media-768 {

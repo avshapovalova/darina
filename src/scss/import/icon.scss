@@ -53,16 +53,12 @@
   }
   &.m-block {
     margin-right: 10px;
+    flex-wrap: wrap;
     @include media-640 {
       margin-bottom: 5px;
     }
   }
-  &.m-link {
-    width: 20px;
-    height: 20px;
-    background: none;
-    margin-right: 10px;
-  }
+
   &.m-small-svg {
     @include media-640 {
       margin: 0 auto;

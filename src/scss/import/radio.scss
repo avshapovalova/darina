@@ -12,6 +12,7 @@
   line-height: 22px;
   display: inline-block;
   color: $colorBlack;
+
 }
 .radio > [type="radio"][type="radio"]:checked + label:before,
 .radio > [type="radio"][type="radio"]:not(:checked) + label:before {

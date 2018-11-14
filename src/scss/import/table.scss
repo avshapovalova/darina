@@ -4,6 +4,19 @@
   width: 100%;
   font-size: 16px;
   margin-bottom: 30px;
+  &.m-mobile{
+    display: none;
+    @include media-640 {
+      display: block;
+      margin-top: 20px;
+      margin-bottom:30px;
+    }
+  }
+  &.m-nomobile{
+    @include media-640 {
+      display: none;
+    }
+  }
   @include media-640 {
     font-size: 14px;}
 
@@ -15,8 +28,6 @@
       background: $colorPrimary;
     }
   }
-
-
 
   &__tr:last-child {
     border-bottom: none;
@@ -43,7 +54,6 @@
     padding-top:5px;
     padding-bottom:5px;
     padding-left: 22px;
-
   }
 
   &__td:first-child {

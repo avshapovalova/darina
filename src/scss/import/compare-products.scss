@@ -24,6 +24,11 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+    @include media-640 {
+      display: block;
+      width: auto;
+
+    }
   }
 
   &__prod-add{
@@ -41,6 +46,10 @@
     @include media-768 {
       width: calc(100% / 3 - 30px);
     }
+    @include media-640 {
+      width: auto;
+  }
+
   }
 
   &__prod{
@@ -58,6 +67,10 @@
     @include media-768 {
       width: calc(100% / 3 - 30px);
     }
+    @include media-640 {
+      width: auto;
+    }
+
 
   }
 
@@ -69,6 +82,9 @@
     }
     @include media-768 {
     font-size: 14px;
+    }
+    @include media-640 {
+      text-align: center;
     }
   }
 
@@ -103,6 +119,9 @@
     @include media-768 {
       height: 145px;
     }
+    @include media-640 {
+      height: 240px;
+    }
   }
 
   &__image{
@@ -119,6 +138,9 @@
     @include media-768 {
       height: 145px;
     }
+    @include media-640 {
+      height: 240px;
+    }
 
   }
 
@@ -130,19 +152,15 @@
 
   &__icon-add {
     position: absolute;
-    top: 120px;
-    right: 120px;
-    @include media-1200 {
-      top: 100px;
-      right: 100px;
-    }
+    bottom: 52%;
+    left:43%;
     @include media-960 {
-      top: 70px;
-      right: 70px;
+      bottom: 57%;
+      left:40%;
     }
-    @include media-768 {
-      top: 50px;
-      right: 50px;
+    @include media-640 {
+      bottom: 50%;
+      left:43%;
     }
   }
 }

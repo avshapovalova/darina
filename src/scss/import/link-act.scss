@@ -4,20 +4,45 @@
   cursor: pointer;
   &.link-act-margin{
     margin-top: 20px;
+  }
+  &__icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    background: url(/img/compare.svg) no-repeat;
+    background-size: 21px 21px;
+    //&:hover{
+     // background: url(/img/compare-red.svg) no-repeat;
+    //  background-size: cover;
+   // }
+  }
+  &__link{
+    display: block;
+    color:$colorBlack;
+    text-decoration: none;
+    &:hover{
+      &.link__text{
+        color:$colorPrimary;
+      }
+      &.link-act__icon
+      {
+        background: url(/img/compare-red.svg) no-repeat;
+        background-size: cover;
+      }
 
+    }
 
   }
 }
 .link {
   &__text {
-    color:$colorBlack;
-    text-decoration: none;
+
     line-height: normal;
     font-size: 16px;
     padding-top: 5px;
-    &:hover{
-      color:$colorPrimary;
-    }
+    //&:hover{
+     // color:$colorPrimary;
+   // }
 
     &.m-white {
       color: $colorWhite;

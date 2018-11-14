@@ -3,6 +3,10 @@
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    &.m-nomobile{
+      @include media-640 {
+        display: none;
+    }}
   }
   &__link {
     display: block;
