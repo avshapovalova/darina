@@ -15,6 +15,14 @@ html, body {
 
 .page {}
 
+img.m-zoom {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1560px;

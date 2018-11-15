@@ -136,16 +136,10 @@
             <div class="filter__item">
                 <div class="filter__item-title">Размер</div>
                 <form class="filter__item-form">
-                    <div class="slider" id="slider">
-                        Ширина
-                    </div>
-
-
-
+                    <div>Ширина</div>
+                    <div id="slider-width"></div>
                 </form>
-
             </div>
-
 
             <div class="filter__item">
                 <div class="filter__item-title">Вольт</div>
@@ -215,7 +209,9 @@
 
 <script src="/js/PageCatalog.js"></script>
 <script type="application/javascript">
-  PageCatalog.init()
+    $(document).ready(function(){
+      PageCatalog.init()
+    })
 </script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
