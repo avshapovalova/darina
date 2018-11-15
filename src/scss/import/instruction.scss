@@ -40,6 +40,15 @@
     margin-top: 20px;
     width: 84px;
     height: 84px;
+    display: block;
+    text-decoration: none;
+    &:hover{
+      color:$colorPrimary;
+      & svg,
+      & svg path {
+        fill: $colorPrimary
+      }
+    }
   }
   &__ul{
     list-style: none;

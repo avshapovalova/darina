@@ -59,12 +59,15 @@
   }
 
   &__item {
+    display: inline-block;
     flex: 0 0 auto;
     width: calc(100% / 3);
     border-right: 2px solid $colorPrimary;
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    text-decoration: none;
+    color: inherit;
     &.reds2{
       width: 50%;
     }

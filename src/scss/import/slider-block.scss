@@ -1,0 +1,8 @@
+.slider-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  @include media-640 {
+    display: block;
+  }
+}

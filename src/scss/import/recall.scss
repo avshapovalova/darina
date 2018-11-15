@@ -1,7 +1,6 @@
 .recall{
   &__top{
     margin-bottom: 30px;
-
   }
 
   &__qty{
@@ -93,5 +92,8 @@
     &__advantage, &__flaw {
       margin-bottom: 20px;
     }
+  &__button{
+    width: 160px;
+  }
 
 }

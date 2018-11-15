@@ -3,11 +3,20 @@
   &__category{
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
     background: $colorGray500;
     height: 54px;
     padding-right: 15px;
     align-items: center;
     margin-bottom: 30px;
+    &:hover{
+      color:$colorPrimary;
+      & svg,
+      & svg path {
+        stroke: $colorPrimary
+      }
+    }
 
   }
   &__category-name{
@@ -15,14 +24,8 @@
     align-items: center;
   }
   &__title{
-    display: block;
-    text-decoration: none;
-    color: inherit;
     font-size: 18px;
     margin-left: 30px;
-    &:hover{
-      color: $colorPrimary;
-    }
     &.m-active {
       color:$colorPrimary;
     }

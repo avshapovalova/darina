@@ -1,5 +1,5 @@
 .banner{
-  background: $colorGray400;
+  //background: $colorGray400;
   height: 490px;
   overflow: hidden;
   & > img {
@@ -19,7 +19,7 @@
 
   &__slide {
     height: 490px;
-    background: $colorGray400;
+   // background: $colorGray400;
     display: flex;
     justify-content: center;
     align-items: center;

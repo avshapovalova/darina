@@ -17,9 +17,9 @@ html, body {
 
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1560px;
   margin: 0 auto;
-  padding:  0 20px 0 20px;
+  padding:  0 105px 0 20px;
   @include media-1440 {
     max-width: unset;
     padding: 0 120px 0 20px;

@@ -49,7 +49,6 @@
     @include media-640 {
       width: auto;
   }
-
   }
 
   &__prod{
@@ -161,6 +160,21 @@
     @include media-640 {
       bottom: 50%;
       left:43%;
+    }
+  }
+  &__td{
+    width: 35%;
+    @include media-1440 {
+       width: 33%;
+     }
+    @include media-1200 {
+      width: 32%;
+    }
+    @include media-960 {
+      width: 29%;
+    }
+    @include media-768 {
+      width: 26%;
     }
   }
 }
