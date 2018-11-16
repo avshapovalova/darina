@@ -3411,6 +3411,45 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   top: 50%;
   right: 120%; }
 
+.slider-width {
+  position: relative; }
+  .slider-width:before {
+    position: absolute;
+    content: "50";
+    top: -25px;
+    left: 0; }
+  .slider-width:after {
+    position: absolute;
+    content: "60";
+    top: -25px;
+    right: -8px; }
+
+.slider-length {
+  position: relative; }
+  .slider-length:before {
+    position: absolute;
+    content: "50";
+    top: -25px;
+    left: 0; }
+  .slider-length:after {
+    position: absolute;
+    content: "60";
+    top: -25px;
+    right: -8px; }
+
+.slider-height {
+  position: relative; }
+  .slider-height:before {
+    position: absolute;
+    content: "50";
+    top: -25px;
+    left: 0; }
+  .slider-height:after {
+    position: absolute;
+    content: "60";
+    top: -25px;
+    right: -8px; }
+
 .social-links {
   display: flex;
   justify-content: space-between;
