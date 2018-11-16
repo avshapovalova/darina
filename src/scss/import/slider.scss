@@ -260,49 +260,20 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   top: 50%;
   right: 120%;
 }
-.slider-width{
+.slider-width,
+.slider-length,
+.slider-height {
   position: relative;
   &:before{
     position: absolute;
-    content: "50";
+    content: attr(data-from);
     top: -25px;
     left:0;
   }
   &:after{
     position: absolute;
-    content: "60";
+    content: attr(data-to);
     top: -25px;
     right: -8px;
   }
 }
-.slider-length{
-  position: relative;
-  &:before{
-    position: absolute;
-    content: "50";
-    top: -25px;
-    left:0;
-  }
-  &:after{
-    position: absolute;
-    content: "60";
-    top: -25px;
-    right: -8px;
-  }
-}
-.slider-height{
-  position: relative;
-  &:before{
-    position: absolute;
-    content: "50";
-    top: -25px;
-    left:0;
-  }
-  &:after{
-    position: absolute;
-    content: "60";
-    top: -25px;
-    right: -8px;
-  }
-}
-
