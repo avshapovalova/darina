@@ -2,7 +2,7 @@
 <%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 <div class="banner">
-    <img src="http://www.remontbp.com/wp-content/uploads/2016/11/29-1.jpg"/>
+    <img class="m-zoom" class="m-zoom" src="http://www.remontbp.com/wp-content/uploads/2016/11/29-1.jpg"/>
 </div>
 
 <div class="container">
@@ -136,8 +136,13 @@
             <div class="filter__item">
                 <div class="filter__item-title">Размер</div>
                 <form class="filter__item-form">
-                    <div>Ширина</div>
+                    <div class="filter__item-width">Ширина</div>
                     <div id="slider-width"></div>
+                    <div class="filter__item-length">Длина</div>
+                    <div id="slider-length"></div>
+                    <div class="filter__item-height">Высота</div>
+                    <div id="slider-height"></div>
+
                 </form>
             </div>
 

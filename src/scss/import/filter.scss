@@ -36,4 +36,18 @@
     text-transform: uppercase;
     color: $colorPrimary;
   }
+
+  &__item-width{
+    margin-bottom: 35px;
+  }
+
+  &__item-length{
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  &__item-height{
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
 }

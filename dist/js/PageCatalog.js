@@ -1,16 +1,39 @@
 const PageCatalog = {
   init: function() {
     console.log('PageCatalog.init')
-    this.initSliderRange()
+    this.initSliderWidth()
+    this.initSliderLength()
+    this.initSliderHeight()
+
   },
 
-  initSliderRange: function(){
+  initSliderWidth: function(){
     noUiSlider.create(document.getElementById('slider-width'), {
-      start: [20, 80],
+      start: [50, 60],
       connect: true,
       range: {
-        'min': 0,
-        'max': 100
+        'min': 50,
+        'max': 60
+      }
+    });
+  },
+  initSliderLength: function(){
+    noUiSlider.create(document.getElementById('slider-length'), {
+      start: [50, 60],
+      connect: true,
+      range: {
+        'min': 50,
+        'max': 60
+      }
+    });
+  },
+  initSliderHeight: function(){
+    noUiSlider.create(document.getElementById('slider-height'), {
+      start: [50, 60],
+      connect: true,
+      range: {
+        'min': 50,
+        'max': 60
       }
     });
   },

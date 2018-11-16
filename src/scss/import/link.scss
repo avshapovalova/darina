@@ -1,6 +1,9 @@
 .link {
   color: $colorBlack;
   text-decoration: none;
+  &:hover{
+    color: $colorPrimary;
+  }
 
   &.m-line {
     text-decoration: underline;

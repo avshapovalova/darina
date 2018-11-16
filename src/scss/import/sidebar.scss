@@ -97,8 +97,14 @@
   &__item{
     display: flex;
     align-items: center;
-
     margin-bottom: 15px;
+    &:hover{
+      color:$colorPrimary;
+      & svg,
+      & svg path {
+        fill: $colorPrimary
+      }
+    }
 
   }
 
@@ -109,7 +115,11 @@
     width: 54px;
     height: 54px;
     &:hover{
-
+      color:$colorPrimary;
+      & svg,
+      & svg path {
+        fill: $colorPrimary
+      }
     }
   }
 
