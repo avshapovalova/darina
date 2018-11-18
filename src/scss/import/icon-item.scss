@@ -2,7 +2,7 @@
   width: calc(25% - 180px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: center;
 
 
@@ -40,7 +40,16 @@
     }
 
   }
-  &__button{
+  &__icon {
+    flex: 0 0 auto;
+    height: 100px;
+    @include media-640 {
+      height: 80px;
+    }
+  }
+
+  &__button {
+    flex: 0 0 auto;
     width: 100%;
     @include media-640 {
       font-size: 16px;
@@ -51,19 +60,25 @@
   }
 
 
-  &__title{
+  &__title {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
     font-size: 18px;
     text-transform: uppercase;
-    margin-top:40px;
   }
   &__line {
-
+    flex: 0 0 auto;
     height: 2px;
     background-color: black;
     margin-top: 15px;
 
   }
   &__text {
+    flex: 1 1 auto;
+    height: 100%;
     font-size: 14px;
     margin-top: 15px;
     margin-bottom: 15px ;

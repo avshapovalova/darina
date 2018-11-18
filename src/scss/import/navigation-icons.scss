@@ -1,9 +1,6 @@
 .navigation-icons {
   padding-top:40px;
   padding-bottom: 40px;
-  @include media-768 {
-    padding:0px;
-  }
   @include media-320 {
     padding-bottom: 20px;
     padding-top: 10px;
