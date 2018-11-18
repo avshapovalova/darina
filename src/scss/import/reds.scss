@@ -1,12 +1,22 @@
 .reds {
-
-  border:2px solid $colorPrimary;
-  border-radius: 10px;
-  display: flex;
-  align-items: stretch;
-
-  flex-wrap: wrap;
+  position: relative;
   margin: 40px auto 10px auto;
+
+  &__panel {
+    position: relative;
+    border:2px solid $colorPrimary;
+    border-radius: 10px;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    &.m-fixed {
+      z-index: 90;
+      position: fixed;
+      top: 0;
+    }
+  }
 
   &__part3 {
     flex:0 0 auto;
@@ -32,6 +42,7 @@
       }
     }
   }
+
   &__part2 {
     align-items: stretch;
     flex:0 0 auto;
@@ -72,6 +83,7 @@
       width: 50%;
     }
   }
+
   &__item:last-child{
     border-right: none;
   }

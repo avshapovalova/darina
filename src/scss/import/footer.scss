@@ -83,6 +83,12 @@
     @include media-960 {
       margin-left: 40px;
     }
+    @include media-320 {
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__phone {
     display: block;

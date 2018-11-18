@@ -1,4 +1,5 @@
 <%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/svg.html'))() %>
 <%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 
@@ -26,7 +27,7 @@
                         <path d="M4.69922 8.2002H10.8992" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M7.80078 11.2996V5.09961" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <a href="#" class="product-detail__zoom-text">увеличить</a>
+                    <a href="#" class="product-detail__zoom-text js-make-zoom">увеличить</a>
 
                 </div>
                 </div>
@@ -191,15 +192,17 @@
     <div class="container">
 
         <div class="reds">
-            <div class="reds__part3">
-                <a href="#options" class="reds__item">Характеристики</a>
-                <a href="#docs" class="reds__item">Документация</a>
-                <a href="#features" class="reds__item">Особенности</a>
-            </div>
-            <div class="reds__part3">
-                <a href="#recall" class="reds__item">Отзывы</a>
-                <a href="#review" class="reds__item">Обзоры</a>
-                <a href="#additionally" class="reds__item">Дополнительно</a>
+            <div class="reds__panel">
+                <div class="reds__part3">
+                    <a href="#options" class="reds__item">Характеристики</a>
+                    <a href="#docs" class="reds__item">Документация</a>
+                    <a href="#features" class="reds__item">Особенности</a>
+                </div>
+                <div class="reds__part3">
+                    <a href="#recall" class="reds__item">Отзывы</a>
+                    <a href="#review" class="reds__item">Обзоры</a>
+                    <a href="#additionally" class="reds__item">Дополнительно</a>
+                </div>
             </div>
         </div>
 
@@ -497,7 +500,9 @@
 
 <script src="/js/PageProductCard.js"></script>
 <script type="application/javascript">
-  PageProductCard.init()
+    $(document).ready(function(){
+      PageProductCard.init()
+    })
 </script>
 
 

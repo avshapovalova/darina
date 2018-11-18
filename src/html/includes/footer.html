@@ -170,31 +170,39 @@
     <div class="popup__title">Ваш город</div>
     <div class="popup__body">
         <form>
-            <div class="popup__inner">
-                <input class="popup__input" type="text" value="Санкт - Петербург"/>
-                <input class="popup__icon-loc" type="submit" value="">
+            <div class="city-popup__part1">
+                <div class="city-popup__inner">
+                    <input class="city-popup__input" type="text" value="Санкт - Петербург"/>
+                    <input class="city-popup__icon-loc" type="submit" value="">
+                </div>
+                <div class="city-popup__buttons">
+                    <button class="city-popup__button city-popup__button1 js-ok" type="button">Да</button>
+                    <button class="city-popup__button js-select" type="button">Выбрать другой город</button>
+                </div>
             </div>
-            <div class="popup__buttons">
-                <button class="popup__button popup__button1" type="submit">Да</button>
-                <button class="popup__button" type="submit">Выбрать другой город</button>
-            </div>
-            <div class="popup__inner">
-                <input class="popup__input" type="text" value="Моск"/>
-                <input class="popup__icon-search" type="submit" value="">
-            </div>
-            <div class="popup__result m-open">
-                <div class="popup__city">Новомосковск (Тульская обл)</div>
-                <div class="popup__city">Москва (Москва г)</div>
-                <div class="popup__city">Московский (Москва г)</div>
+            <div class="city-popup__part2">
+                <div class="city-popup__inner">
+                    <input class="city-popup__input" type="text" value="Моск"/>
+                    <input class="city-popup__icon-search" type="submit" value="">
+                </div>
+                <div class="city-popup__result m-open">
+                    <div class="city-popup__city">Новомосковск (Тульская обл)</div>
+                    <div class="city-popup__city">Москва (Москва г)</div>
+                    <div class="city-popup__city">Московский (Москва г)</div>
+                </div>
             </div>
         </form>
     </div>
 </div>
 
+<script src="/js/libs/jquery.matchHeight.js"></script>
 <script src="/js/libs/owl/owl.carousel.min.js"></script>
 <script src="/js/libs/nouislider/nouislider.js"></script>
+<script src="/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="/js/bundle.js"></script>
 <script src="/js/Shader.js"></script>
+<script src="/js/RedsMenu.js"></script>
+<script src="/js/PopupCityChange.js"></script>
 <script src="/js/App.js"></script>
 <script type="application/javascript">
     Shader.init()

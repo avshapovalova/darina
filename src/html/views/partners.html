@@ -1,4 +1,5 @@
 <%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/svg.html'))() %>
 <%= _.template(require('./../includes/sidebar.html'))() %>
 <%= _.template(require('./../includes/breadcrumbs.html'))() %>
 
@@ -19,14 +20,16 @@
 <div class="container">
 
     <div class="reds">
-        <div class="reds__part2">
-            <a href="#cooperation" class="reds__item reds2">Условия сотрудничества</a>
-            <a href="#presentation" class="reds__item reds2">Презентации продукта</a>
+        <div class="reds__panel">
+            <div class="reds__part2">
+                <a href="#cooperation" class="reds__item reds2">Условия сотрудничества</a>
+                <a href="#presentation" class="reds__item reds2">Презентации продукта</a>
 
-        </div>
-        <div class="reds__part2">
-            <a href="#instruction" class="reds__item reds2">Сертификаты и инструкции на товары</a>
-            <a href="#documentation" class="reds__item reds2">Сервисная документация</a>
+            </div>
+            <div class="reds__part2">
+                <a href="#instruction" class="reds__item reds2">Сертификаты и инструкции на товары</a>
+                <a href="#documentation" class="reds__item reds2">Сервисная документация</a>
+            </div>
         </div>
     </div>
 
@@ -752,7 +755,9 @@
 
 <script src="/js/PagePartners.js"></script>
 <script type="application/javascript">
-  PagePartners.init()
+    $(document).ready(function(){
+      PagePartners.init()
+    })
 </script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
