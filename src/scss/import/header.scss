@@ -18,11 +18,12 @@
     @include media-1200 {
       width: 50%;
     }
-    @include media-768 {
-      & svg {
-        width: 95%;
+    @include media-960 {
+      & svg{
+        width: 65%;
       }
     }
+
     @include media-320 {
       & svg {
         width: 100%;
@@ -49,19 +50,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: calc(64% - 370px);
+    width: calc(64% - 320px);
 
 
     @include media-1440 {
-      width: calc(64% - 180px);
-      padding-right: 85px;
+      width: calc(64% - 160px);
     }
     @include media-1200 {
-      width: calc(50% - 100px);
-      padding-right: 100px;
+      width: calc(50% - 150px);
+      padding-right: 90px;
     }
     @include media-960 {
-      width: calc(50% - 60px);
+      width: calc(50% - 80px);
+      padding-right: 35px;
     }
     @include media-768 {
       width: calc(50% - 30px);
@@ -101,10 +102,8 @@
     @include media-1200 {
       margin-left: 5px;
     }
-    @include media-960 {
+    @include media-1440 {
       font-size: 18px;
-
-
     }
   }
 
@@ -167,14 +166,29 @@
   }
 }
 
+
+
 .header-search {
   width: 270px;
   height: 37px;
   display: flex;
   position: relative;
+  @include media-1440 {
+    width: 225px;
+  }
+  @include media-1200 {
+    width: calc(50% - 40px);
+  }
+  @include media-960 {
+    height: 25px;
+  }
+  @include media-640 {
+    width: auto;
+  }
 
   &__form.search__form {
     width: 100%;
+
     @include media-640 {
       width: 37px;
     }
@@ -185,6 +199,9 @@
   }
   &__input.search__input {
     height: 37px;
+    @include media-960 {
+      height: 25px;
+    }
 
     @include media-640 {
       display: none;
@@ -194,21 +211,16 @@
     height: 20px;
     width: 20px;
     background-size: 20px 20px;
+    @include media-960 {
+      height: 15px;
+      width: 15px;
+      background-size: 15px 15px;
+    }
     @include media-640 {
       height: 30px;
       width: 30px;
       background-size: 30px 30px;
     }
-  }
-
-  @include media-1440 {
-    width: 225px;
-  }
-  @include media-1200 {
-    width: calc(50% - 20px);
-  }
-  @include media-640 {
-    width: auto;
   }
 }
 

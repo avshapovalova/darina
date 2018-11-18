@@ -33,7 +33,7 @@
     }
 
     @include media-960 {
-      width: 310px;
+      width: calc(50% - 30px);
       &:nth-child(odd) {
         margin-right: auto;
       }

@@ -15,7 +15,7 @@
       object-fit: cover;
     }
     @include media-768 {
-      height: 150px;
+      height: 160px;
     }
     @include media-320 {
       height: 240px;
@@ -41,14 +41,14 @@
 }
 
 .block5-item {
-  width: calc(20% - 80px);
+  width: calc(20% - 70px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 
   @include media-1440 {
-    width: calc(25% - 80px);
+    width: calc(25% - 70px);
   }
   @include media-1200 {
     width: calc(25% - 40px);
@@ -57,13 +57,14 @@
     width: calc(33% - 40px);
   }
   @include media-768 {
-    width: calc(33% - 20px);
+    width: calc(33% - 10px);
   }
   @include media-640 {
     width: calc(50% - 20px);
+
   }
   @include media-320 {
-    width: auto;
+    width: 100%;
   }
   &.m-no-1440{
     @include media-1440 {

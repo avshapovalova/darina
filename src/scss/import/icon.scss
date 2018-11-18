@@ -39,7 +39,6 @@
       & svg {
         width: 100%;
       }
-
     }
     @include media-640 {
       margin: 0 auto;
@@ -76,6 +75,16 @@
         width: 60%;
       }
 
+    }
+  }
+
+  &.header__icon{
+    @include media-1440 {
+      width: 21px;
+      height: 21px;
+      & svg {
+        width: 60%;
+      }
     }
   }
 }

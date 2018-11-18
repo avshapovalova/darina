@@ -43,8 +43,14 @@
     width: 34px;
   }
   &__button {
-    width:145px;
+    width:142px;
     margin: 10px 0;
     padding: 9px 20px 5px 20px;
+    @include media-640 {
+      width: 130px;
+    }
+    &.m-padding{
+      padding: 9px 9px 5px 9px;
+    }
   }
 }

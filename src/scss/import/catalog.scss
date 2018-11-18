@@ -33,7 +33,7 @@
 
   }
   &__filter-content {
-    width: 220px;
+    width: 200px;
     margin: 60px auto 30px auto;
     @include media-640 {
       display: none;
@@ -44,12 +44,12 @@
     }
   }
   &__listing {
-    width: calc(100vw - 405px - 185px - 75px);
+    width: calc(100vw - 405px - 185px - 107px);
     margin-left: 75px;
     display: flex;
     flex-wrap: wrap;
     @include media-1440 {
-      width: calc(100vw - 355px - 115px - 25px);
+      width: calc(100vw - 355px - 115px - 7px);
       margin-left: 25px;
     }
     @include media-1200 {
@@ -66,6 +66,7 @@
     }
     @include media-640 {
       width: 100%;
+      padding: 0 20px;
     }
   }
   &__item {
@@ -87,6 +88,13 @@
         margin-right: auto;
       }
       margin: 0 auto;
+    }
+    @include media-640 {
+      width: 310px;
+    }
+    @include media-320 {
+      width: auto;
+
     }
   }
 }

@@ -6,4 +6,9 @@
   @include media-960 {
     width: 87px;
   }
+  &.header__social-links{
+    @include media-1440 {
+      width: 72px;
+    }
+  }
 }

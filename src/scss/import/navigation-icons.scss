@@ -5,17 +5,37 @@
     padding:0px;
   }
   @include media-320 {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
   }
 
   &__block1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include media-320 {
-      display:block;
+  }
 
+.navigation-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $colorPrimary;
+  border-radius: 50%;
+  margin: 0 auto;
+  @include media-960 {
+    width: 100px;
+    height: 100px;
+    & svg {
+      width: 100%;
     }
   }
+  @include media-640 {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+}
 }
 
