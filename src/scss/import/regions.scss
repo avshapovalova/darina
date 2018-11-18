@@ -20,11 +20,16 @@
     font-weight: 900;
     border-top: 1px solid $colorGray500;
     color:$colorBlack;
-    &.m-active{
+    &.m-open {
       color: $colorPrimary;
     }
+    &.m-open .regions__obls{
+      display: block;
+    }
+
   }
   &__obls{
+    display:none;
     margin: 0;
     padding-left: 0;
     padding-bottom: 20px;
@@ -37,21 +42,21 @@
     text-transform: uppercase;
     font-weight: 600;
     color:$colorBlack;
-    &.m-active{
+    &.m-open{
       color: $colorPrimary;
+    }
+    &.m-open .regions__cities{
+      display: block;
     }
   }
   &__cities{
     margin: 0;
-
     padding-left: 0;
     padding-bottom: 20px;
     padding-top: 20px;
     display: none;
-    &.m-active{
-      display: block;
-    }
   }
+
   &__city{
     list-style: none;
     font-size: 18px;

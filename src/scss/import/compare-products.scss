@@ -144,12 +144,14 @@
   }
 
   &__icon-del{
+    display: block;
     position: absolute;
     top: -22px;
     right: -22px;
   }
 
   &__icon-add {
+    display: block;
     position: absolute;
     bottom: 52%;
     left:43%;

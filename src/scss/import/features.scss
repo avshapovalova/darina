@@ -1,11 +1,56 @@
 .features {
   display: flex;
-  justify-content: space-around;
-  @include media-1440 {
-    justify-content:space-between;
-  }
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
   @include media-960 {
     flex-wrap:wrap;
     justify-content: space-around;
   }
+  @include media-640 {
+    padding-top: 0;
+  }
+  &__item{
+    width: 120px;
+    margin-bottom: 15px;
+    @include media-960 {
+      width: 204px;
+    }
+    @include media-768 {
+      width: 160px;
+    }
+    @include media-640 {
+      width: 120px;
+    }
+    @include media-320 {
+      width: 70px;
+    }
+
+  }
+
+  &__icon{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    @include media-640 {
+      width: 60px;
+      height: 60px;
+      & svg {
+        width: 95%;
+        height: 95%;
+      }
+    }
+
+  }
+
+  &__text{
+    text-align: center;
+    margin-top: 15px;
+    @include media-640 {
+      font-size: 11px;
+    }
+  }
+
+
+
 }
