@@ -5,15 +5,16 @@ const RedsMenu = {
   left: 0,
   height: 0,
   init: function() {
-    this.$el = $('.reds')
-    this.$panel = $('.reds__panel')
-    this.handleWindowScroll();
-    this.handleClickLink();
+    setTimeout(function(){
+      this.$el = $('.reds')
+      this.$panel = $('.reds__panel')
+      this.handleWindowScroll();
+      this.handleClickLink();
+    }.bind(this), 500)
   },
 
   handleWindowScroll: function(){
-    const marginTop = parseInt(this.$el.css('marginTop'))
-    this.top = this.$el.offset().top + marginTop + 10
+    this.top = this.$el.offset().top
     this.left = this.$el.offset().left
     this.height = this.$el.outerHeight()
     this.$el.height(this.$panel.outerHeight())
