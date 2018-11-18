@@ -257,7 +257,7 @@
         </div>
 
         <div class="instruction">
-            <div class="instruction__listing">
+            <div class="instruction__listing js-instructions">
                 <div class="instruction__item">
                     <div class="instruction__title">Отдельностоящие плиты</div>
                     <a href="#" class="instruction__icon">
@@ -449,7 +449,9 @@
 
 <script src="/js/PageService.js"></script>
 <script type="application/javascript">
-  PageService.init()
+    $(document).ready(function(){
+      PageService.init()
+    })
 </script>
 
 <%= _.template(require('./../includes/compare-block.html'))() %>
