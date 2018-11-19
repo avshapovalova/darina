@@ -4,6 +4,7 @@
   padding: 40px 0px;
   @include media-640 {
     display: block;
+    padding: 10px 0px;
   }
 
   &__categories {
@@ -93,6 +94,9 @@
   }
   &__item + &__item &__item-content {
     padding-top: 30px;
+    @include media-640 {
+      padding-top: 0;
+    }
   }
   &__item:nth-child(even){
     flex-direction: row-reverse;
@@ -144,12 +148,8 @@
     }
     @include media-960 {
       width: auto;
-      margin-top:40px;
-    }
-    @include media-768 {
-      margin-top:40px;
+      margin-top:30px;
       margin-bottom: 40px;
-
     }
     @include media-320 {
       height: 240px;
