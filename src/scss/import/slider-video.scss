@@ -52,10 +52,34 @@
 
   &__content{}
 
-}
-.slider-video-button {
-  width: 160px;
-  @include media-960 {
-    display:none;
+  &__button{
+    width: 160px;
+    &.m-mobile{
+      @include media-960 {
+        display:block;
+      }
+    }
+    &.m-nomobile{
+      @include media-960 {
+        display:none;
+      }
+    }
   }
+
+  &__block-basic{
+    @include media-960 {
+      padding-bottom: 60px;
+    }
+  }
+  &__dots{
+    &.slider-video__dots{
+      @include media-960 {
+        left: 50%;
+        bottom: -80px;
+        transform: translateX(-50%);
+      }
+    }
+
+  }
+
 }
