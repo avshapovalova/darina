@@ -1,0 +1,14 @@
+.breadcrumbs-main {
+  display: none;
+  @include media-640 {
+    display: block;
+    text-align: center;
+  }
+  &__phone{
+    font-size: 14px;
+    color: $colorWhite;
+    text-decoration: none;
+    white-space: nowrap;
+
+  }
+}

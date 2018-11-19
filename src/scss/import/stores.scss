@@ -65,13 +65,3 @@
 
 }
 
-.map{
-  width:65%;
-  background: $colorGray400;
-  @include media-640 {
-    width: 100%;
-    height: 430px;
-
-  }
-
-}
