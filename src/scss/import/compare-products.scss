@@ -100,14 +100,15 @@
   &__image-add{
     display: block;
     text-decoration: none;
-    background: $colorGray400;
+    //background: $colorGray400;
     height: 292px;
     margin-bottom: 30px;
     overflow: hidden;
     & > img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: 50% 50%;
     }
     @include media-1200 {
       height: 245px;
