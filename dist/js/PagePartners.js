@@ -2,6 +2,7 @@ const PagePartners = {
   init: function() {
     console.log('PagePartners.init')
     this.initBanner()
+    RedsMenu.init()
   },
 
   initBanner: function(){

@@ -1,42 +1,29 @@
 const PageCatalog = {
   init: function() {
     console.log('PageCatalog.init')
-    this.initSliderWidth()
-    this.initSliderLength()
-    this.initSliderHeight()
-
+    this.initSlider('slider-width', 10, 90, 0, 100)
+    this.initSlider('slider-length', 0, 100, 0, 100)
+    this.initSlider('slider-height', 50, 80, 0, 100)
   },
 
-  initSliderWidth: function(){
-    noUiSlider.create(document.getElementById('slider-width'), {
-      start: [50, 60],
-      connect: true,
-      range: {
-        'min': 50,
-        'max': 60
-      }
-    });
-  },
-  initSliderLength: function(){
-    noUiSlider.create(document.getElementById('slider-length'), {
-      start: [50, 60],
-      connect: true,
-      range: {
-        'min': 50,
-        'max': 60
-      }
-    });
-  },
-  initSliderHeight: function(){
-    noUiSlider.create(document.getElementById('slider-height'), {
-      start: [50, 60],
-      connect: true,
-      range: {
-        'min': 50,
-        'max': 60
-      }
-    });
-  },
+  initSlider: function(id, from, to, min, max){
+    const el = document.getElementById(id)
+    el.setAttribute('data-from', from)
+    el.setAttribute('data-to', to)
 
+    noUiSlider.create(el, {
+      start: [from, to],
+      connect: true,
+      range: {
+        'min': min,
+        'max': max
+      }
+    }).on('slide', function(values){
+      const from = Math.round(values[0])
+      const to = Math.round(values[1])
+      el.setAttribute('data-from', from)
+      el.setAttribute('data-to', to)
+    })
+  },
 }
 

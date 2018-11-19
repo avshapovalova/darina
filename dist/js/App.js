@@ -2,8 +2,9 @@ const App = {
   init: function() {
     console.log('App.init')
     this.initSidebar()
-    this.initCityChange()
+    PopupCityChange.init()
     this.handleShader()
+    this.handleAccordions()
   },
 
   initSidebar: function() {
@@ -25,43 +26,31 @@ const App = {
     })
   },
 
-  initCityChange: function() {
-    const self = this
-    const $button = $('.js-header-city')
-    $button.on('click', function(){
-      self.openCityPopup()
-    })
-  },
-
   handleShader: function() {
     const self = this
     $(Shader).on('close', function(){
       self.closeSidebar()
-      self.closeCityPopup()
+      PopupCityChange.close()
     })
-  },
-
-  openCityPopup: function() {
-    const $cityPopup = $('.js-city-popup')
-    $cityPopup.addClass('m-open')
-    Shader.open()
-  },
-
-  closeCityPopup: function() {
-    const $cityPopup = $('.js-city-popup')
-    $cityPopup.removeClass('m-open')
-    Shader.close()
   },
 
   openSidebar: function() {
     const $sidebar = $('.js-sidebar')
+    // $('body').addClass('m-fixed')
     $sidebar.addClass('m-open')
     Shader.open()
   },
 
   closeSidebar: function() {
     const $sidebar = $('.js-sidebar')
+    // $('body').removeClass('m-fixed')
     $sidebar.removeClass('m-open')
     Shader.close()
+  },
+
+  handleAccordions: function() {
+    $('.js-accordion').on('click', function(){
+      $(this).toggleClass('m-open')
+    })
   },
 }
