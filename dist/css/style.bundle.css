@@ -993,6 +993,9 @@ img.m-zoom {
   img.m-zoom:hover {
     transform: scale(1.1); }
 
+.m-red.m-red {
+  color: #E9454F; }
+
 .container {
   width: 100%;
   max-width: 1560px;
@@ -3060,6 +3063,8 @@ img.m-zoom {
   padding-left: 0;
   padding-bottom: 20px;
   padding-top: 20px; }
+  .regions__obls.m-open {
+    display: block; }
 
 .regions__obl {
   list-style: none;
@@ -3068,8 +3073,6 @@ img.m-zoom {
   font-weight: 600;
   color: #000000; }
   .regions__obl.m-open {
-    color: #E9454F; }
-  .regions__obl.m-open .regions__cities {
     display: block; }
 
 .regions__cities {
@@ -3078,6 +3081,8 @@ img.m-zoom {
   padding-bottom: 20px;
   padding-top: 20px;
   display: none; }
+  .regions__cities.m-open {
+    display: block; }
 
 .regions__city {
   list-style: none;

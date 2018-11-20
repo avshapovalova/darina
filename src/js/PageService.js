@@ -48,6 +48,4 @@ const PageService = {
       })
     })
   },
-
-  initAccordion() {}
 }
