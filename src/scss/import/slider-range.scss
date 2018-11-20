@@ -78,11 +78,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
   height: 4px;
 }
 .noUi-horizontal .noUi-handle {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   left: -7px;
-  top: -3px;
+  top: -4px;
   outline: none;
 
 }
@@ -96,7 +96,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
   top: -17px;
 }
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
-  right: -7px;
+  right: -9px;
   left: auto;
 }
 /* Styling;

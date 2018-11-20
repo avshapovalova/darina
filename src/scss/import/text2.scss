@@ -9,11 +9,9 @@
     line-height: normal;
     font-size: 16px;
     margin-right: 100px;
-
-    @include media-320 {
-      margin-right: 0px;
+    @include media-960 {
+      margin-right: 0;
     }
-
   }
   &__image {
 

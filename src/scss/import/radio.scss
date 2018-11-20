@@ -49,3 +49,56 @@
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+
+.radio > [type="checkbox"][type="checkbox"]:checked,
+.radio > [type="checkbox"][type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.radio > [type="checkbox"][type="checkbox"]:checked + label,
+.radio > [type="checkbox"][type="checkbox"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 22px;
+  display: inline-block;
+  color: $colorBlack;
+
+}
+.radio > [type="checkbox"][type="checkbox"]:checked + label:before,
+.radio > [type="checkbox"][type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $colorBlack;
+  border-radius: 100%;
+  background: #fff;
+}
+.radio > [type="checkbox"][type="checkbox"]:checked + label:after,
+.radio > [type="checkbox"][type="checkbox"]:not(:checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: $colorPrimary;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.radio > [type="checkbox"][type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.radio > [type="checkbox"][type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

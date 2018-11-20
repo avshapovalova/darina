@@ -4,10 +4,16 @@
   padding-bottom: 40px;
   padding-top: 40px;
   @include media-960 {
+    height: 80px;
     padding-bottom: 25px;
     padding-top: 25px;
   }
+  @include media-768 {
+    height: 75px;
+
+  }
   @include media-640 {
+    height: 35px;
     padding-bottom: 5px;
     padding-top: 5px;
   }
@@ -19,15 +25,19 @@
       width: 50%;
     }
     @include media-960 {
-      & svg{
-        width: 90%;
-        height: 90%;
+      width: 129px;
+      height: 19px;
+
+      & svg {
+        width: 100%;
+        height: 100%;
       }
+
       transform: translateY(2px);
     }
 
     @include media-768 {
-      width: 48%;
+      width: 40%;
     }
     @include media-640 {
       margin: 0 auto;
@@ -80,11 +90,11 @@
       padding-right: 90px;
     }
     @include media-960 {
-      width: calc(50% - 80px);
+      width: calc(50% - 50px);
       padding-right: 35px;
     }
     @include media-768 {
-      width: calc(50% - 30px);
+      width: calc(50% - 23px);
     }
     @include media-640 {
       display: none;
@@ -211,11 +221,13 @@
   @include media-1200 {
     width: calc(50% - 40px);
   }
+
   @include media-960 {
     height: 25px;
+    width: 50%;
   }
   @include media-768 {
-    width: calc(52% - 20px);
+    width: calc(60% - 20px);
   }
 
   @include media-640 {
