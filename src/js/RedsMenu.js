@@ -33,8 +33,8 @@ const RedsMenu = {
     const self = this
     this.$el.on('click', 'a', function(e){
       e.preventDefault();
-      const name = $(this).attr('href').substr(1)
-      const $target = $('[name='+name+']')
+      const id = $(this).attr('href').substr(1)
+      const $target = $('#' + id)
       if ($target.length) {
         const isFixed = $target.offset().top >= self.top
         $('html, body').animate({ scrollTop: $target.offset().top - (isFixed ? (self.height + 25) : 25) }, 200)
