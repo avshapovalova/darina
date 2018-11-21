@@ -51,7 +51,7 @@ const App = {
 
     handleAccordions: function() {
         $('.js-accordion').on('click', function(){
-            $(this).toggleClass('m-red').next().toggleClass('m-open')
+            $(this).toggleClass('m-color-red').next().toggleClass('m-open')
         })
     },
 
