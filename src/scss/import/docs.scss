@@ -1,6 +1,27 @@
 .docs {
   margin-top: 25px;
-  &__category{
+
+  &__accordion{
+    &.m-open .docs__head{
+      color:$colorPrimary;
+      & svg,
+      & svg path {
+        stroke: $colorPrimary
+      }
+    }
+    &.m-open .docs__body{
+      display: flex;
+    }
+    &.m-open .docs__icon-arrow{
+      display: none;
+    }
+    &.m-open .docs__icon-arrow-active{
+      display: block;
+    }
+
+  }
+  &__head{
+    position: relative;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -19,7 +40,7 @@
     }
 
   }
-  &__category-name{
+  &__head-name{
     display: flex;
     align-items: center;
   }
@@ -33,6 +54,27 @@
       margin-left: 5px;
     }
   }
+
+  &__body{
+    display: none;
+    flex-wrap: wrap;
+    padding-bottom:20px;
+  }
+
+  &__icon-arrow{
+    position: absolute;
+    top:16px;
+    right:20px;
+  }
+
+  &__icon-arrow-active{
+    display:none;
+    position: absolute;
+    top:16px;
+    right:20px;
+  }
+
+
   &__item{
     width:16%;
     margin-right: 25px;

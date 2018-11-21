@@ -5,6 +5,7 @@ const App = {
     PopupCityChange.init()
     this.handleShader()
     this.handleAccordions()
+      this.handleAccordionsQuestions()
     this.initHeaderSearch()
   },
 
@@ -52,6 +53,12 @@ const App = {
     handleAccordions: function() {
         $('.js-accordion').on('click', function(){
             $(this).toggleClass('m-color-red').next().toggleClass('m-open')
+        })
+    },
+
+    handleAccordionsQuestions: function() {
+        $('.js-accordion-questions').on('click', function(){
+            $(this).toggleClass('m-open')
         })
     },
 
