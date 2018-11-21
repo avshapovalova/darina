@@ -1,7 +1,13 @@
 .carousel {
   position: relative;
 
-  &__content {}
+  &__content {
+  }
+
+  &__instruction{
+    display: flex;
+  }
+
   &__dots {
     position: absolute;
     bottom: 30px;
@@ -25,6 +31,12 @@
     &.m-white {
       & button {
         background: $colorWhite;
+      }
+    }
+    &.m-novisible{
+      display:none;
+      @include media-1440{
+        display: inline-flex;
       }
     }
 

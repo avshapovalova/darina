@@ -73,15 +73,6 @@
     margin-top: 15px;
     margin-bottom: 15px;
 
-    @include media-1200 {
-      font-size: 15px;
-    }
-    @include media-960 {
-      font-size: 14px;
-    }
-    @include media-768 {
-      font-size: 15px;
-    }
   }
 
   &__result-link{

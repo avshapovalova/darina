@@ -8,25 +8,6 @@ const App = {
     this.initHeaderSearch()
   },
 
-    initHeaderSearch: function(){
-        const self = this
-        const $headerLeft = $('.js-header-left')
-        const $headerIconSearch = $('.js-header-icon')
-        const $headerSearch = $('.js-search-open')
-        const $headerIconClose = $('.js-header-icon-close')
-
-        $headerIconSearch.on('click', function () {
-            event.preventDefault()
-            $headerLeft.addClass('m-close')
-            $headerSearch.addClass('m-open')
-        })
-
-        $headerIconClose.on('click', function(){
-            $headerLeft.removeClass('m-close')
-            $headerSearch.removeClass('m-open')
-        })
-    },
-
     initSidebar: function() {
         const self = this
         const $sidebarButtonOpen = $('.js-sidebar-open')
@@ -71,6 +52,25 @@ const App = {
     handleAccordions: function() {
         $('.js-accordion').on('click', function(){
             $(this).toggleClass('m-red').next().toggleClass('m-open')
+        })
+    },
+
+    initHeaderSearch: function(){
+        const self = this
+        const $headerLeft = $('.js-header-left')
+        const $headerIconSearch = $('.js-header-icon')
+        const $headerSearch = $('.js-search-open')
+        const $headerIconClose = $('.js-header-icon-close')
+
+        $headerIconSearch.on('click', function () {
+            event.preventDefault()
+            $headerLeft.addClass('m-close')
+            $headerSearch.addClass('m-open')
+        })
+
+        $headerIconClose.on('click', function(){
+            $headerLeft.removeClass('m-close')
+            $headerSearch.removeClass('m-open')
         })
     },
 }
