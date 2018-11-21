@@ -15,15 +15,17 @@
 <script src="/js/libs/jquery-3.3.1.min.js"></script>
 <div class="container">
 <header class="header">
-    <div class="header__left">
-        <div class="search header-search">
-        <form class="search__form header-search__form">
-            <div class="search__inner header-search__inner">
-                <input class="search__input header-search__input" type="text"/>
-                <input class="search__icon header-search__icon" type="submit" value=""/>
+    <div class="header__left m-close">
+        <div class="search header__search">
+        <form class="search__form header__search-form">
+            <div class="search__inner header__search-inner">
+                <input class="search__input header__search-input" type="text"/>
+                <input class="search__icon header__search-icon" type="submit" value=""/>
             </div>
         </form>
         </div>
+
+
         <a href="#" class="header__logo">
             <svg width="197" height="29"><use xlink:href="#svg-logo"></use></svg>
         </a>
@@ -45,11 +47,27 @@
                 <svg width="22" height="16"><use xlink:href="#svg-yt"></use></svg>
             </a>
         </div>
-
         <a class="header__phone" href="tel:+78007758078">+7 800 775-80-78</a>
-
-
     </div>
+
+    <div class="header__search-responsive m-open">
+        <div class="search header__responsive">
+            <form class="search__form header__responsive-form">
+                <div class="search__inner header__responsive-inner">
+                    <input class="search__input header__responsive-input" type="text"/>
+                </div>
+            </form>
+            <div class="header__responsive-icon">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0968 18.1651C13.668 19.0109 12.1441 19.3868 10.3344 19.3868C5.19093 19.3868 1 15.2518 1 10.1769C1 8.39133 1.47624 6.69972 2.42873 5.29004" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.5166 2.05486C7.75104 1.38359 9.17539 1 10.6947 1C15.8224 1 20.0005 5.21944 20.0005 10.3978C20.0005 12.124 19.5257 13.7542 18.766 15.0968" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.12891 6.51611L13.8708 14.4839" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.12891 14.4839L13.8708 6.51611" stroke="#E9454F" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
     <button class="header__burger js-mobile-burger">
         <span class="header__burger-lines"></span>
     </button>
