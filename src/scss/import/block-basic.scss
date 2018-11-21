@@ -1,8 +1,11 @@
 .block-basic {
   padding-bottom: 28px;
-  &.m-red {
-    background-color: $colorPrimary;
-    color:$colorWhite;
+  &.m-red{
+    &.block-basic{
+      background-color: $colorPrimary;
+      color:$colorWhite;
+    }
+
   }
   &.m-shadow{
     box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1);

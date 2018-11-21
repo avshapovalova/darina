@@ -24,7 +24,15 @@ const PageMain = {
         nav: false,
         dots: true,
         dotsContainer: '.js-slider-news-dots',
-        items: 1,
+          margin:100,
+          responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+              0:{
+                  items:1
+              },
+              961:{
+                  items:2
+              }
+          }
       })
     });
   },
@@ -35,7 +43,15 @@ const PageMain = {
         nav: false,
         dots: true,
         dotsContainer: '.js-slider-hits-dots',
-        items: 1,
+          margin:100,
+          responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+              0:{
+                  items:1
+              },
+              961:{
+                  items:2
+              }
+          }
       })
     });
   },

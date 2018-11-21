@@ -2,7 +2,18 @@
   position: relative;
 
   &__content {
+    &.carousel__content{
+      display: flex;
+      margin-bottom: 20px;
+      @include media-640 {
+        display: block;
+      }
+
+    }
+
   }
+
+
 
   &__instruction{
     display: flex;

@@ -22,7 +22,6 @@ const PageService = {
                     1440:{
                         items:5
                     }
-
                 }
             })
         });

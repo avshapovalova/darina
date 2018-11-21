@@ -63,12 +63,14 @@
 
   &__list {
     width: calc(100% - 256px - 70px);
+    @include media-1200 {
+      width: calc(100% - 235px - 70px);
+    }
     @include media-768 {
       width: calc(100% - 189px - 70px);
-      @include media-640 {
-        width:auto;
-      }
-
+    }
+    @include media-640 {
+      width:auto;
     }
 
   }
@@ -116,6 +118,9 @@
     font-size: 24px;
     text-transform: uppercase;
     max-width: 400px;
+    @include media-1200 {
+      font-size: 20px;
+    }
     @include media-320 {
       font-size: 18px;
     }
