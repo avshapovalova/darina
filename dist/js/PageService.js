@@ -1,31 +1,30 @@
 const PageService = {
   init: function() {
     console.log('PageService.init')
-    this.initInstructionHeights()
-    //this.initAccordion()
-      this.initSliderInstruction()
-
+    this.initSliderInstruction()
+    window.requestAnimationFrame(function(){
+      this.initInstructionHeights()
+    }.bind(this))
   },
-    initSliderInstruction: function(){
-        $(document).ready(function(){
-            $(".js-slider-instruction").owlCarousel({
-                nav: false,
-                dots: true,
-                dotsContainer: '.js-slider-instruction-dots',
-                responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-                    0:{
-                        items:1
-                    },
-                    640:{
-                        items:3
-                    },
-                    1440:{
-                        items:5
-                    }
-                }
-            })
-        });
-    },
+
+  initSliderInstruction: function(){
+    $(".js-slider-instruction").owlCarousel({
+      nav: false,
+      dots: true,
+      dotsContainer: '.js-slider-instruction-dots',
+      responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+        0:{
+          items:1
+        },
+        640:{
+          items:3
+        },
+        1440:{
+          items:5
+        }
+      },
+    })
+  },
 
   initInstructionHeights() {
     $('.instruction__title').matchHeight();
@@ -63,6 +62,7 @@ const PageService = {
       }
     }
 
+    console.log(maxHeights)
     $uls.each(function(ulIndex){
       const $ul = $(this)
       $ul.find('li').each(function(liIndex){
@@ -70,7 +70,4 @@ const PageService = {
       })
     })
   },
-
-
-
 }

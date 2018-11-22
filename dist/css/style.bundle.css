@@ -1535,7 +1535,7 @@ img.m-zoom {
       .docs__item {
         width: auto; } }
   .docs__link {
-    margin-bottom: 10px;
+    margin: 10px 0;
     color: #E9454F;
     text-decoration: none;
     display: inline-block; }
@@ -2318,7 +2318,7 @@ img.m-zoom {
   display: block; }
 
 .instruction__link {
-  margin-bottom: 10px;
+  margin: 10px 0;
   color: #E9454F;
   text-decoration: none;
   display: block; }
