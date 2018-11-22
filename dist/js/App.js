@@ -1,13 +1,13 @@
 const App = {
-  init: function() {
-    console.log('App.init')
-    this.initSidebar()
-    PopupCityChange.init()
-    this.handleShader()
-    this.handleAccordions()
-      this.handleAccordionsQuestions()
-    this.initHeaderSearch()
-  },
+    init: function() {
+        console.log('App.init')
+        this.initSidebar()
+        PopupCityChange.init()
+        this.handleShader()
+        this.handleAccordions()
+        this.handleAccordionsQuestions()
+        this.initHeaderSearch()
+    },
 
     initSidebar: function() {
         const self = this
