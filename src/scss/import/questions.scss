@@ -1,10 +1,5 @@
 .questions{
-  padding-left: 115px;
-  padding-right: 115px;
   margin-bottom:30px;
-  @include media-1440 {
-    padding:0px;
-  }
   &__item {
     border-bottom: 1px solid $colorGray500;
     &.m-open .questions__head {
