@@ -906,6 +906,8 @@ template {
     @media all and (max-width: 320px) {
       .catalog__item {
         width: auto; } }
+  .catalog__pagination.catalog__pagination {
+    margin-top: 30px; }
 
 .city-popup__part1 {
   display: block; }
@@ -2640,12 +2642,7 @@ img.m-zoom {
       width: auto; } }
 
 .questions {
-  padding-left: 115px;
-  padding-right: 115px;
   margin-bottom: 30px; }
-  @media all and (max-width: 1440px) {
-    .questions {
-      padding: 0px; } }
   .questions__item {
     border-bottom: 1px solid #E5E5E5; }
     .questions__item.m-open .questions__head::before {
@@ -3894,7 +3891,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 670px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px; }
+  margin-bottom: 70px; }
   @media all and (max-width: 640px) {
     .stores {
       display: block;
