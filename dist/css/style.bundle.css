@@ -2079,6 +2079,9 @@ img.m-zoom {
     width: 100%;
     height: 37px;
     position: relative; }
+    @media all and (max-width: 960px) {
+      .header__search-inner.search__inner {
+        height: 25px; } }
   .header__search-input.search__input {
     height: 37px; }
     @media all and (max-width: 960px) {
@@ -2106,7 +2109,7 @@ img.m-zoom {
     @media all and (max-width: 640px) {
       .header__search-icon1 {
         display: block;
-        top: 8px;
+        top: 3px;
         left: -22px;
         position: absolute; } }
   .header__search-responsive {
