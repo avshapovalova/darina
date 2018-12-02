@@ -3,21 +3,29 @@
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include media-1440 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @include media-960 {
+    padding-bottom: 50px;
+  }
 
   &__content {
     flex: 1;
     line-height: normal;
     font-size: 16px;
     margin-right: 100px;
+    @include media-1440 {
+      margin-right: 40px;
+    }
     @include media-960 {
       margin-right: 0;
     }
   }
   &__image {
-
     height: 382px;
     width: 50%;
-    //background: $colorGray400;
     margin-top: 20px;
     overflow: hidden;
     & > img {
@@ -26,21 +34,25 @@
       object-fit: cover;
     }
     @include media-1440 {
-      min-width: 523px;
+      width: 47%;
     }
     @include media-1200 {
-      min-width: 433px;
+      width: 43%;
     }
     @include media-960 {
-      width: 500px;
+      width: 65%;
       height: 253px;
       margin: 0 auto;
     }
     @include media-768 {
-      width: 438px;
+      width: 73%;
+    }
+
+    @include media-640 {
+      width: 95%;
     }
     @include media-320 {
-      width: 230px;
+      width: 100%;
       height: 240px;
     }
   }
