@@ -1,0 +1,16 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/svg.html'))() %>
+<%= _.template(require('./../includes/sidebar.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
+<div class="container">
+    <div class="page-404">
+        <div class="page-404__numbers">404</div>
+        <div class="page-404__title">страница не найдена</div>
+        <div class="page-404__text">страница, на которую вы пытаетесь попасть не существует, или была удалена</div>
+        <div class="page-404__text2">перейдите <a href="" class="page-404__link">на главную страницу</a></div>
+    </div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html'))() %>
