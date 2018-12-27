@@ -105,6 +105,7 @@
   }
   &__item:nth-child(even)  &__item-content {
     padding-left: 30px;
+    padding-bottom: 20px;
 
 
     @include media-960 {
@@ -130,7 +131,14 @@
   }
   &__item-text {
     max-width: 400px;
-    padding: 20px 0px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    //height: 130px;
+    overflow: hidden;
+    display: -webkit-box;
+    textOverflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
     @include media-960 {
       width: auto;
     }
