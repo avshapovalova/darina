@@ -16,6 +16,10 @@
       position: fixed;
       top: 0;
     }
+    @include media-640 {
+      text-align: center;
+      justify-content: center;
+    }
   }
 
   &__part3 {
@@ -72,7 +76,7 @@
   &__item {
     display: inline-block;
     flex: 0 0 auto;
-    width: calc(100% / 3);
+    width: calc(100%/6);
     border-right: 2px solid $colorPrimary;
     text-align: center;
     padding-bottom: 20px;
@@ -81,6 +85,11 @@
     color: inherit;
     &.reds2{
       width: 50%;
+    }
+
+    @include media-640 {
+      width: 33.3333% !important;
+      border: none;
     }
   }
 

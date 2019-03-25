@@ -95,6 +95,10 @@
     &.m-sub{
       color: #898989;
       margin-left:25px;
+      display: none;
+      &.opened {
+        display: block;
+      }
     }
 
   }

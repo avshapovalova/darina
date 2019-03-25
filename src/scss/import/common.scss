@@ -30,6 +30,16 @@ img.m-zoom {
   color: $colorPrimary;
 }
 
+.hide {
+  display: none;
+}
+
+body .form {
+  &__error {
+    border: solid 2px red;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1560px;

@@ -6,8 +6,31 @@ const App = {
         this.handleShader()
         this.handleAccordions()
         this.handleAccordionsQuestions()
+        this.handleReds()
+        this.handleSubmenu()
         this.initHeaderSearch()
         this.initMap()
+    },
+
+    handleSubmenu: function() {
+        const $sidebarLink = $('.sidebar__li > .sidebar__item > a');
+        $sidebarLink.on('click', function() {
+            const $subMenu = $(this).closest('.sidebar__li').find('.m-sub');
+            if (!$subMenu.length) {
+                return true;
+            }
+            $subMenu.toggleClass('opened');
+            return false;
+        });
+    },
+
+    handleReds: function() {
+        let $panel = $('.reds__panel');
+        const parentWidth = $panel.outerWidth();
+        const redItemsCount = $panel.find('a').length;
+        $panel.find('a').each(function(e, o) {
+            $(o).outerWidth(parentWidth/redItemsCount-5);
+        });
     },
 
     initSidebar: function() {

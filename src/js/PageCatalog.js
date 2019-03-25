@@ -4,6 +4,20 @@ const PageCatalog = {
     this.initSlider('slider-width', 10, 90, 0, 100)
     this.initSlider('slider-length', 0, 100, 0, 100)
     this.initSlider('slider-height', 50, 80, 0, 100)
+    this.handleAddToCompare()
+  },
+
+  handleAddToCompare: function() {
+    var isLimit = function() {
+      return true;
+    };
+    const $toCompareLink = $('.product-card__tocompare-add');
+    $toCompareLink.on('click', function() {
+      if (isLimit()) {
+        $(this).parent().addClass('compare-limit');
+        return false;
+      }
+    });
   },
 
   initSlider: function(id, from, to, min, max){
