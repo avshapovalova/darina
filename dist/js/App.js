@@ -19,13 +19,13 @@ const App = {
         var self = this;
         $sidebarLink.on('click', function() {
             const $subMenu = $(this).closest('.sidebar__li').find('.m-sub');
+            if (!$subMenu.length) {
+                return true;
+            }
             if (!self.isSidebarOpen) {
                 self.openSidebar();
                 $subMenu.addClass('opened');
                 return false;
-            }
-            if (!$subMenu.length) {
-                return true;
             }
             $subMenu.toggleClass('opened');
             return false;
