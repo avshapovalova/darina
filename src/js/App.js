@@ -1,4 +1,6 @@
 const App = {
+    isSidebarOpen: false,
+
     init: function() {
         console.log('App.init')
         this.initSidebar()
@@ -14,9 +16,10 @@ const App = {
 
     handleSubmenu: function() {
         const $sidebarLink = $('.sidebar__li > .sidebar__item > a');
+        var self = this;
         $sidebarLink.on('click', function() {
             const $subMenu = $(this).closest('.sidebar__li').find('.m-sub');
-            if (!$subMenu.length) {
+            if (!$subMenu.length || !self.isSidebarOpen) {
                 return true;
             }
             $subMenu.toggleClass('opened');
@@ -65,6 +68,7 @@ const App = {
         // $('body').addClass('m-fixed')
         $sidebar.addClass('m-open')
         Shader.open()
+        this.isSidebarOpen = true
     },
 
     closeSidebar: function() {
@@ -72,6 +76,7 @@ const App = {
         // $('body').removeClass('m-fixed')
         $sidebar.removeClass('m-open')
         Shader.close()
+      this.isSidebarOpen = false
     },
 
     handleAccordions: function() {
