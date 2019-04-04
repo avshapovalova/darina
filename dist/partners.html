@@ -1749,9 +1749,9 @@
     <div class="popup__body">
         <form>
             <div class="city-popup__part1">
-                <div class="city-popup__inner">
-                    <input class="city-popup__input" type="text" value="Санкт - Петербург"/>
-                    <input class="city-popup__icon-loc" type="submit" value="">
+                <div class="city-popup__inner city-popup__inner-main">
+                    <span class="city-popup__icon-loc city-popup__icon-loc-big"></span>
+                    <div class="city-popup__input city-popup__input-info">Санкт - Петербург</div>
                 </div>
                 <div class="city-popup__buttons">
                     <button class="city-popup__button city-popup__button1 js-ok" type="button">Да</button>
@@ -1759,14 +1759,27 @@
                 </div>
             </div>
             <div class="city-popup__part2">
-                <div class="city-popup__inner">
-                    <input class="city-popup__input" type="text" value="Моск"/>
-                    <input class="city-popup__icon-search" type="submit" value="">
+                <div class="city-popup__inner city-popup__inner-second">
+                    <div class="row">
+                        <div class="col-9">
+                            <input class="city-popup__input" type="text" value="Моск"/>
+                            <input class="city-popup__icon-search" type="submit" value="">
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="city-popup__button popup__part2-button">Выбрать</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="city-popup__result m-open">
-                    <div class="city-popup__city">Новомосковск (Тульская обл)</div>
-                    <div class="city-popup__city">Москва (Москва г)</div>
-                    <div class="city-popup__city">Московский (Москва г)</div>
+                <div class="row">
+                    <div class="col-9">
+                        <div class="city-popup__result m-open">
+                            <div class="city-popup__city">Новомосковск (Тульская обл)</div>
+                            <div class="city-popup__city">Москва (Москва г)</div>
+                            <div class="city-popup__city">Московский (Москва г)</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                    </div>
                 </div>
             </div>
         </form>

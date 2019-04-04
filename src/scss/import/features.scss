@@ -1,7 +1,7 @@
 .features {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 10px;
   @include media-960 {
     flex-wrap:wrap;

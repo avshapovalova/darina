@@ -33,8 +33,9 @@
   height: 10px;
   background: $colorPrimary;
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 0;
+  left: 0;
+  margin: 4px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;

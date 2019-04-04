@@ -28,7 +28,7 @@
     color: inherit;
     background: $colorGray500;
     height: 54px;
-    padding-right: 15px;
+    padding-right: 45px;
     align-items: center;
     margin-bottom: 30px;
     &:hover{
@@ -81,7 +81,8 @@
     margin-top:15px;
     border-bottom: 1px solid $colorGray500;
     @include media-640{
-      width:27%;
+      width: 48%;
+      margin: 1%;
     }
     @include media-320{
       width:auto;

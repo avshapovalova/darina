@@ -16,7 +16,7 @@
     width: calc(35% - 30px);
     @include media-640 {
       width: 100%;
-      height: 670px;
+      height: auto;
       overflow: scroll;
       margin-bottom: 15px;
     }
