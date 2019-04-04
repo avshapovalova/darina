@@ -173,13 +173,13 @@
 
   &__icon {
     margin-right:15px;
-    svg {
+    * {
       max-height: 35px;
     }
 
     @include media-640 {
-      width: 30px;
-      height: 35px;
+      width: 30px !important;
+      height: 35px !important;
       margin:0 auto;
       & svg{
         width: 100%;
