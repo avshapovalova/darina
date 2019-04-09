@@ -1,6 +1,6 @@
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   padding-top: 10px;
   @include media-960 {

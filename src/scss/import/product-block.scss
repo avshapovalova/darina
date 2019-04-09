@@ -18,6 +18,29 @@
     }
   }
 
+  .icon-compare-goto,
+  .product-card__gotocompare {
+    display: none;
+  }
+
+  &.compare-goto {
+    svg,
+    .product-card__tocompare-text,
+    .product-card__cantcompare {
+      display: none;
+    }
+
+    .icon-compare-goto {
+      display: block;
+    }
+
+    .product-card__gotocompare {
+      color: #E93434;
+      display: block;
+    }
+  }
+
+
   &__image {
     text-decoration: none;
     display: block;
