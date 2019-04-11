@@ -1722,7 +1722,7 @@ body .form__error {
 
 .features {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   padding-top: 10px; }
   @media all and (max-width: 960px) {
