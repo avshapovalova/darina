@@ -739,14 +739,16 @@ template {
     transform: translateY(1px); }
 
 .button {
-  padding: 15px 20px 10px 20px;
-  font-size: 19px;
+  padding: 19px 32px;
+  font-size: 17px;
   background: transparent;
   border: 2px solid #000000;
   border-radius: 10px;
-  line-height: 1;
+  font-weight: 600;
+  line-height: 87%;
   color: #000000;
   display: block;
+  letter-spacing: 0.3px;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.2s;
@@ -2362,7 +2364,7 @@ body .form__error {
       .icon-item__button {
         font-size: 16px; } }
     .icon-item__button.m-small-padding {
-      padding: 15px 5px 10px 5px; }
+      padding: 11px 5px; }
   .icon-item__title {
     flex: 0 0 auto;
     display: flex;
@@ -3857,7 +3859,8 @@ body .form__error {
     flex-wrap: wrap; }
     @media all and (max-width: 640px) {
       .slider-item__icons {
-        justify-content: center; } }
+        justify-content: center;
+        flex-wrap: nowrap; } }
   .slider-item__block2 {
     display: flex;
     width: 170px;
@@ -3867,6 +3870,11 @@ body .form__error {
     @media all and (max-width: 640px) {
       .slider-item__block2 {
         width: 100px;
+        display: block;
+        margin: 10px 0 15px 0; } }
+    @media all and (max-width: 400px) {
+      .slider-item__block2 {
+        width: 80px;
         display: block;
         margin: 10px 0 15px 0; } }
   .slider-item__icon {
@@ -3894,6 +3902,9 @@ body .form__error {
       .slider-item__icon-name {
         margin: 8px auto 0 auto;
         text-align: center; } }
+    @media all and (max-width: 400px) {
+      .slider-item__icon-name {
+        font-size: 10px; } }
 
 /*! nouislider - 12.1.0 - 10/25/2018 */
 /* Functional styling;

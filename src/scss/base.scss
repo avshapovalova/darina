@@ -23,6 +23,8 @@ $font2: PFDinMedium, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @mixin media-320() { @media all and (max-width: 320px) { @content; } }
+@mixin media-380() { @media all and (max-width: 380px) { @content; } }
+@mixin media-400() { @media all and (max-width: 400px) { @content; } }
 @mixin media-640() { @media all and (max-width: 640px) { @content; } }
 @mixin media-768() { @media all and (max-width: 768px) { @content; } }
 @mixin media-960() { @media all and (max-width: 960px) { @content; } }

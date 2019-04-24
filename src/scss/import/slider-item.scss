@@ -153,6 +153,7 @@
     flex-wrap: wrap;
     @include media-640 {
       justify-content: center;
+      flex-wrap: nowrap;
     }
 
   }
@@ -166,6 +167,11 @@
 
     @include media-640 {
       width:100px;
+      display: block;
+      margin: 10px 0 15px 0;
+    }
+    @include media-400 {
+      width:80px;
       display: block;
       margin: 10px 0 15px 0;
     }
@@ -201,6 +207,9 @@
     @include media-640 {
       margin:8px auto 0 auto;
       text-align: center;
+    }
+    @include media-400 {
+      font-size: 10px;
     }
   }
 }
