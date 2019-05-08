@@ -14,6 +14,11 @@
     }
   }
 
+  &__name {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
   &__block1{
     width:auto;
     margin: 0 auto;
@@ -140,7 +145,7 @@
   }
 
   &__button{
-    width: 195px;
+    width: 190px;
   }
 
   &__docs{
