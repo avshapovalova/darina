@@ -10,6 +10,9 @@
   }
   &.title-icon-partners{
     align-items: center;
+    @include media-640 {
+      margin-top: 10px;
+    }
   }
 
   &__content {

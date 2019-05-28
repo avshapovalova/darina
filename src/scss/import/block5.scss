@@ -120,6 +120,14 @@
 
   &__link{
     margin-bottom: 20px;
+
+    svg {
+      path {
+        fill: #F6F6F6;
+        stroke: #E9454F;
+        stroke-width: 0.25;
+      }
+    }
   }
 }
 
