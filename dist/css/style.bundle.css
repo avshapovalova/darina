@@ -464,6 +464,9 @@ template {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+      @media all and (max-width: 768px) {
+        .block5__image > img {
+          margin: 0 auto; } }
     @media all and (max-width: 768px) {
       .block5__image {
         height: 160px; } }
@@ -951,14 +954,25 @@ template {
     margin-bottom: 40px; }
   .city-popup__inner-second {
     margin-bottom: 10px; }
+    @media all and (max-width: 768px) {
+      .city-popup__inner-second {
+        margin-bottom: 0; } }
 
 .city-popup.popup__part2 {
   width: 700px; }
+  @media all and (max-width: 768px) {
+    .city-popup.popup__part2 .col-3, .city-popup.popup__part2 .col-9 {
+      position: relative;
+      width: 100%;
+      float: none; } }
   .city-popup.popup__part2 .popup__title {
     display: none; }
   .city-popup.popup__part2 .popup__part2-button {
     width: 100%;
     margin: 0 0 0 15px; }
+    @media all and (max-width: 768px) {
+      .city-popup.popup__part2 .popup__part2-button {
+        margin: 10px 0 5px 0px; } }
   .city-popup.popup__part2 .popup__body {
     padding: 30px 45px; }
 
@@ -989,6 +1003,10 @@ template {
   justify-content: space-between;
   margin-bottom: 22px;
   margin-top: 22px; }
+  @media all and (max-width: 768px) {
+    .city-popup__buttons {
+      flex-direction: column;
+      align-items: center; } }
 
 .city-popup__button {
   background: #FFFFFF;
@@ -997,8 +1015,10 @@ template {
   font-size: 18px;
   border: 2px solid #FFFFFF;
   height: 55px;
-  border-radius: 10px;
-  padding-top: 7px; }
+  border-radius: 10px; }
+  @media all and (max-width: 768px) {
+    .city-popup__button {
+      margin-bottom: 5px; } }
 
 .city-popup__button1 {
   width: 84px; }
@@ -1012,6 +1032,9 @@ template {
   display: none; }
   .city-popup__result.m-open {
     display: block; }
+  @media all and (max-width: 768px) {
+    .city-popup__result {
+      padding: 10px 10px 10px 20px; } }
 
 .city-popup__city {
   padding-bottom: 10px; }
@@ -1037,6 +1060,9 @@ template {
     display: inline-block;
     vertical-align: middle;
     margin-right: 14px; }
+    @media all and (max-width: 768px) {
+      .city-popup__icon-loc-big {
+        margin-right: 0; } }
 
 .city-popup__icon-search {
   cursor: pointer;
@@ -2744,6 +2770,7 @@ body .form__error {
   width: 500px;
   top: 20%;
   left: 50%;
+  max-width: 95%;
   transform: translate(-50%, 0);
   background: #E9454F;
   border-radius: 10px;
@@ -2791,6 +2818,9 @@ body .form__error {
   .popup__body {
     padding: 30px 80px;
     color: #FFFFFF; }
+    @media all and (max-width: 768px) {
+      .popup__body {
+        padding: 20px; } }
 
 .product-card {
   padding: 25px;

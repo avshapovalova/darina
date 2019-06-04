@@ -3,6 +3,7 @@
   width: 500px;
   top: 20%;
   left: 50%;
+  max-width: 95%;
   transform: translate(-50%, 0);
   background: $colorPrimary;
   border-radius: 10px;
@@ -63,5 +64,9 @@
   &__body {
     padding: 30px 80px;
     color: $colorWhite;
+
+    @include media-768 {
+      padding: 20px;
+    }
   }
 }
